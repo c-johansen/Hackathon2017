@@ -1,0 +1,41 @@
+.ws-checkout-step-header {
+    position: relative;
+    padding: 24px 16px 24px 66px;
+    min-height: 36px;
+
+    &__icon {
+        position: absolute;
+        left: 16px;
+        top: 24px;
+        color: $black;
+    }
+
+    &--doing {
+        .ws-checkout-step-header__icon {
+            color: #FFF;
+            background-color: $black;
+        }
+    }
+
+    &__button {
+        display: block;
+        width: 100%;
+        text-align: left;
+    }
+
+    &__edit-button {
+        font-size: 14px;
+        line-height: 20px;
+        display: inline-block;
+        margin-top: 8px;
+        color: $red;
+    }
+
+    &__title {
+        font-family: $gothamNarrow;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 25px;
+        margin: 0;
+    }
+}

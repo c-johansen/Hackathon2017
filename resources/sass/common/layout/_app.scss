@@ -1,0 +1,106 @@
+$app-anim-duration: .4s;
+
+.app {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    background-color: #FFF;
+
+    &__top {
+        background-color: #FFF;
+        height: calc(100vh - #{$footer-height});
+        position: relative;
+        overflow: hidden;
+
+        &.slide-right {
+            &-enter {
+                z-index: 1000;
+                position: absolute;
+                top: 0;
+                left: 0;
+                bottom: $footer-height;
+                width: 100vw;
+                transition: transform $app-anim-duration ease;
+                transform: translateX(100vw);
+
+                &-active {
+                    transform: translateX(0);
+                }
+            }
+
+            &-leave {
+                transition: transform $app-anim-duration ease;
+                transform: translateX(0);
+                position: relative;
+                width: 100vw;
+                z-index: 999;
+
+                &-active {
+                    transform: translateX(-20vw);
+                }
+            }
+        }
+
+        &.slide-left {
+            &-enter {
+                position: relative;
+                z-index: 1;
+                width: 100vw;
+                transform: translateX(-20vw);
+                transition: transform $app-anim-duration ease;
+
+                &-active {
+                    transform: translateX(0);
+                }
+            }
+
+            &-leave {
+                width: 100vw;
+                bottom: $footer-height;
+                z-index: 1000;
+                transition: transform $app-anim-duration ease;
+                transform: translateX(0);
+                position: absolute;
+                top: 0;
+                left: 0;
+
+                &-active {
+                    transform: translateX(100vw);
+                }
+            }
+        }
+
+        &__header {
+            height: $header-height;
+            position: relative;
+
+            &--extended {
+                height: $extended-header-height;
+            }
+        }
+
+        &__main {
+            overflow-x: hidden;
+            overflow-y: scroll;
+            position: relative;
+            -webkit-overflow-scrolling: touch;
+            will-change: scroll-position;
+            height: calc(100vh - #{$footer-height} - #{$header-height});
+
+            &--restricted {
+                height: calc(100vh - #{$footer-height} - #{$extended-header-height});
+            }
+
+            &--extended {
+                height: calc(100vh - #{$footer-height});
+            }
+        }
+    }
+
+    &__footer {
+        height: $footer-height;
+        width: 100%;
+        position: relative;
+    }
+}
+

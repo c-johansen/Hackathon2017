@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="7px" height="13px" viewBox="0 0 7 13" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.1 (44463) - http://www.bohemiancoding.com/sketch -->
+    <title>Back</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Exports"  fill-rule="evenodd">
+        <g id="Back" fill-rule="nonzero" >
+            <path d="M2.11220658,6.4961532 L6.73981185,1.58516667 C7.08151857,1.22253481 7.08151527,0.634595904 6.73980448,0.271968364 C6.39809369,-0.0906591755 5.84407433,-0.0906556742 5.50236761,0.271976185 L0.256277882,5.83932139 C-0.0853388911,6.20185779 -0.0854386841,6.78960819 0.256054958,7.15227522 L5.50605496,12.7277872 C5.84763851,13.0905497 6.40165783,13.090765 6.74349174,12.7282682 C7.08532565,12.3657714 7.0855286,11.7778325 6.74394504,11.41507 L2.11220658,6.4961532 Z" id="Line"></path>
+        </g>
+    </g>
+</svg>

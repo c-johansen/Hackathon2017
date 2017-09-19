@@ -1,0 +1,35 @@
+.ws-cart-items {
+    &__header {
+        font-size: 14px;
+        font-weight: 600;
+        padding: 8px $container-horizontal-gutter;
+        margin: 0;
+        text-align: left;
+        text-transform: uppercase;
+        color: rgb(72, 72, 72);
+        background-color: $light-gray;
+    }
+
+    &__list {
+        padding: 0;
+        list-style: none;
+        background-color: #FFF;
+        box-shadow: 0 5px 12px  rgba(0, 0, 0, .025);
+    }
+
+    &__item {
+        border-bottom: 1px $light-gray solid;
+        transition: max-height .35s;
+        overflow: hidden;
+
+        &.selfheal {
+            &-leave {
+                max-height: 120px;
+
+                &-active {
+                    max-height: 0;
+                }
+            }
+        }
+    }
+}

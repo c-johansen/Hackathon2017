@@ -1,0 +1,306 @@
+$danger-iconcolor: $red;
+$primary-iconcolor: $red;
+
+@mixin striped-background {
+    background-image:
+        linear-gradient(
+            -45deg,
+            $light-gray 5%,
+            transparent 5%,
+            transparent 50%,
+            $light-gray 50%,
+            $light-gray 55%,
+            transparent 55%,
+            transparent
+        );
+    background-size: 8px 8px;
+}
+
+@mixin striped-background-alcohol {
+    background-image:
+        linear-gradient(
+            -45deg,
+            $pale-red 5%,
+            transparent 5%,
+            transparent 50%,
+            $pale-red 50%,
+            $pale-red 55%,
+            transparent 55%,
+            transparent
+        );
+    background-size: 8px 8px;
+}
+
+.ws-radioitems {
+    margin: 0;
+    padding: 0.01em 0 0;
+    list-style: none;
+    border: none;
+    min-width: 0; // Override -webkit-min-content
+
+    &__legend {
+        text-align: left;
+        margin-bottom: 16px;
+    }
+
+    &__label {
+        font-family: $gothamNarrow;
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 18px;
+        display: block;
+        padding: 16px 16px 16px 48px;
+        margin: 0 0 16px;
+        cursor: pointer;
+        position: relative;
+        background-color: #FFF;
+        border-radius: 3px;
+        transition: background-color .3s, box-shadow .3s;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+
+        &:hover,
+        &:focus {
+            background-color: $light-gray;
+        }
+
+        &:last-child {
+            margin: 0;
+        }
+
+        &--disabled,
+        &--disabled:hover {
+            @include striped-background;
+
+            color: $gray;
+            background-color: $light-gray;
+            cursor: default;
+
+            label {
+                cursor: default;
+            }
+        }
+
+        &--alcohol,
+        &--alcohol:hover {
+            @include striped-background-alcohol;
+
+            /*
+			position: relative;
+			&::after {
+				content: '';
+				position: absolute;
+				left: 0;
+				top: 0;
+				width: 100%;
+				height: 100%;
+                background: $red;
+				//background: url(alcohol-no-small-icon($danger-iconcolor)) center center no-repeat;
+			}
+            */
+        }
+
+        &--checked {
+            color: #FFF;
+            background: $pale-red;
+
+            &:hover,
+            &:focus {
+                background: $pale-red;
+            }
+
+            .ws-radioitems__title {
+                font-weight: 500;
+            }
+        }
+
+        .ws-radio {
+            position: absolute;
+            left: 12px;
+            top: 50%;
+            margin: -12px 0 0;
+        }
+
+        // Secondary modifier overrides
+
+        &--secondary {
+            margin: 0;
+            padding: 12px 48px 12px 16px;
+            border-radius: 0;
+            box-shadow: none;
+            border-bottom: 1px solid $light-gray;
+
+            &:last-child {
+                border-bottom: none;
+            }
+
+            &.ws-radioitems__label--checked {
+                color: $pale-red;
+                background-color: inherit;
+
+                &:hover,
+                &:focus {
+                    background-color: inherit;
+                }
+            }
+
+            .ws-radio {
+                left: auto;
+                right: 16px;
+            }
+        }
+    }
+
+    &__label-group {
+        margin: 0 0 16px;
+    }
+
+    &__title,
+    &__subtitle {
+        display: block;
+    }
+
+    &__subtitle {
+        font-size: 12px;
+    }
+
+    &__price {
+        font-family: $gothamNarrow;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 18px;
+        position: absolute;
+        right: 16px;
+        top: 50%;
+        margin-top: -9px;
+    }
+
+    &--substitutions,
+    &--handover-type {
+        .ws-radioitems__label {
+            position: relative;
+            padding-top: 0;
+            padding-bottom: 0;
+        }
+
+        .ws-label {
+            display: flex;
+            flex-direction: column;
+            min-height: 40px;
+            justify-content: center;
+            padding: 12px 0;
+        }
+    }
+
+    &--substitutions {
+        margin: 0 0 24px;
+    }
+
+    &--handover-type {
+        .ws-radioitems__label {
+            padding-right: 120px;
+        }
+    }
+
+    &--payment {
+        .ws-radioitems__title,
+        .ws-radioitems__subtitle {
+            display: block;
+        }
+    }
+}
+
+.ws-radio,
+.ws-checkbox {
+    input {
+        border: 0;
+        clip: rect(0 0 0 0);
+        height: 1px;
+        margin: -1px;
+        overflow: hidden;
+        padding: 0;
+        position: absolute;
+        width: 1px;
+    }
+
+    &__label {
+        display: block;
+        width: 24px;
+        height: 24px;
+        text-indent: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+
+        &::before {
+            // Outline
+            content: '';
+            box-sizing: border-box;
+            display: block;
+            background-color: #FFF;
+            overflow: hidden;
+            cursor: pointer;
+            width: 24px;
+            height: 24px;
+            margin: 0 12px 0 0;
+            border: 1px solid $pale-red;
+        }
+
+        &::after {
+            // Contents
+            content: '';
+            position: absolute;
+            left: 6px;
+            right: 6px;
+            top: 6px;
+            bottom: 6px;
+        }
+    }
+
+    &--checked .ws-radio__label,
+    input:checked + .ws-radio__label,
+    &--checked .ws-checkbox__label,
+    input:checked + .ws-checkbox__label {
+        &::before {
+            // Outline
+            border-color: $pale-red;
+        }
+
+        &::after {
+            // Contents
+            background-color: $pale-red;
+        }
+    }
+
+    input:disabled + .ws-radio__label,
+    input:disabled + .ws-checkbox__label {
+        &::before {
+            // Outline
+            cursor: default;
+            border-color: $light-gray;
+        }
+
+        &::after {
+            // Contents
+            background-color: transparent;
+        }
+    }
+}
+
+.ws-radio {
+    &__label {
+        &::after,
+        &::before {
+            // Outline & contents
+            border-radius: 50%;
+        }
+    }
+}
+
+.ws-checkbox {
+    &__label {
+        &::after,
+        &::before {
+            // Outline & contents
+            border-radius: 3px;
+        }
+    }
+}

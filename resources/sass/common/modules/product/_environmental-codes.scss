@@ -1,0 +1,31 @@
+.environmental-codes {
+    position: relative;
+    height: 40px;
+    padding: $container-horizontal-gutter $container-horizontal-gutter 0;
+    background-color: #FFF;
+
+    &-wrapper {
+        position: absolute;
+        top: $container-horizontal-gutter;
+        overflow: hidden;
+        right: $container-horizontal-gutter;
+        left: $container-horizontal-gutter;
+
+        > li {
+            float: left;
+            margin-right: 10px;
+        }
+    }
+}
+
+.environmental-code {
+    &__image {
+        width: 32px;
+        height: auto;
+        display: block;
+
+        .icon {
+            display: block;
+        }
+    }
+}

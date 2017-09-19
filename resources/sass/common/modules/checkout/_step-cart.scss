@@ -1,0 +1,22 @@
+.ws-checkout-step--cart {
+    // Overrides
+    .ws-cart {
+        margin: 0 -16px 24px;
+    }
+
+    .ws-price-summary {
+        margin: 0;
+        padding: 0;
+        background: transparent;
+
+        &__line:first-child {
+            border-top: none;
+            padding-top: 0;
+        }
+    }
+
+    // add-to-cart component uses content-box
+    .ws-add-to-cart__button {
+        box-sizing: content-box;
+    }
+}

@@ -1,0 +1,15 @@
+.most-purchased-products {
+    &__title {
+        padding: 15px $container-horizontal-gutter 13px;
+        text-align: left;
+        text-transform: uppercase;
+        font-size: 14px;
+        line-height: 1;
+        font-weight: 500;
+        color: rgb(72, 72, 72);
+        background-color: #FFF;
+        z-index: 1;
+        position: relative;
+        box-shadow: 0 0 2px rgba(#000, .2);
+    }
+}

@@ -1,0 +1,25 @@
+
+.ws-handover-table__window {
+    padding: 16px;
+
+    .ws-radio {
+        display: none;
+    }
+
+    .ws-radioitems__title {
+        font-size: 14px;
+        line-height: 20px;
+    }
+}
+
+.ws-flexipicker {
+    margin-top: 16px;
+
+    .ws-radioitems__label {
+        padding: 16px 64px 16px 48px;
+    }
+}
+
+.react-swipeable-view-container > div {
+    box-sizing: border-box;
+}

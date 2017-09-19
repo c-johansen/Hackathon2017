@@ -1,0 +1,14 @@
+.close-button {
+    position: absolute;
+    top: 40px;
+    right: 24px;
+    width: 16px;
+    border: 1em solid transparent;
+    margin: -1em;
+    z-index: 1;
+    box-sizing: content-box;
+
+    &--inverted {
+        color: #FFF;
+    }
+}

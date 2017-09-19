@@ -1,0 +1,22 @@
+.trumf-heading {
+    color: #FFF;
+    background-color: $blue;
+    padding: 16px 16px 16px (32px + 16px + 16px);
+    position: relative;
+    font-weight: 300;
+    margin-bottom: -#{$container-horizontal-gutter};
+    font-size: 14px;
+
+    &__title {
+        font-weight: bold;
+        font-size: 16px;
+    }
+
+    .icon {
+        width: 32px;
+        position: absolute;
+        left: 16px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}

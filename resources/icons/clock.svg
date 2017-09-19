@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg   viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.1 (44463) - http://www.bohemiancoding.com/sketch -->
+    <title>Time</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Exports" stroke="none" stroke-width="1"  fill-rule="evenodd">
+        <g id="Time"  >
+            <g id="Page-1">
+                <path d="M9,1 C4.589,1 1,4.589 1,9 C1,13.411 4.589,17 9,17 C13.411,17 17,13.411 17,9 C17,4.589 13.411,1 9,1 M9,18 C4.0375,18 0,13.9625 0,9 C0,4.0375 4.0375,0 9,0 C13.9625,0 18,4.0375 18,9 C18,13.9625 13.9625,18 9,18" id="Fill-1"></path>
+                <path d="M12.5123379,10 L8.48766215,10 C8.21847264,10 8,9.747565 8,9.43652902 L8,3.56347098 C8,3.25187153 8.21847264,3 8.48766215,3 C8.75685165,3 8.9753243,3.25187153 8.9753243,3.56347098 L8.9753243,8.87305804 L12.5123379,8.87305804 C12.7815274,8.87305804 13,9.12549304 13,9.43652902 C13,9.747565 12.7815274,10 12.5123379,10" id="Fill-3"></path>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,11 @@
+.empty-cart-poster {
+    color: #FFF;
+    background-color: $black;
+    height: calc(100vh - #{$header-height});
+    margin-top: -2px;
+
+    .generic-poster__icon {
+        position: relative;
+        width: 62px;
+    }
+}

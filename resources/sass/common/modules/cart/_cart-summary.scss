@@ -1,0 +1,104 @@
+.cart-summary {
+    position: relative;
+    padding: 17px $container-horizontal-gutter;
+    background-color: $black;
+    color: #FFF;
+    height: 80px - 17 * 2;
+    transition: height .4s .2s, padding .4s .2s;
+
+    &--minimal {
+        padding-top: 12px;
+        padding-bottom: 10px;
+        height: 44px - 12 - 10;
+        transition-delay: .2s;
+    }
+
+    &__minimize-button {
+        position: absolute;
+        z-index: 2;
+        top: 0;
+        color: #FFF;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 10px 20px;
+        margin: 0;
+
+        .icon {
+            width: 15px;
+            display: block;
+            opacity: .5;
+        }
+    }
+
+    &__price {
+        font-size: 15px;
+        font-weight: 500;
+        margin-bottom: 4px;
+        display: block;
+        color: #FFF;
+    }
+
+    &__item-count {
+        display: block;
+        color: #FFF;
+        font-weight: 300;
+        font-size: 13px;
+        line-height: 15px;
+        transition: transform .2s, opacity .2s;
+
+        &.cart-summary-slide-left-enter {
+            opacity: 0;
+            transform: translateX(-60px);
+            transition-delay: .4s;
+
+            &-active {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        &.cart-summary-slide-left-leave {
+            transform: translateX(0);
+            opacity: 1;
+
+            &-active {
+                opacity: 0;
+                transform: translateX(-60px);
+            }
+        }
+    }
+
+    &__button {
+        position: absolute;
+        border-radius: 2px;
+        top: 50%;
+        margin-top: -20px;
+        right: 16px;
+        background-color: #FFF;
+        color: $black;
+        width: 120px;
+        height: 40px;
+        font-size: 14px;
+        display: block;
+        font-weight: 300;
+        transition: transform .2s, opacity .2s;
+
+        &.cart-summary-slide-right-enter {
+            opacity: 0;
+            transform: translateX(60px);
+            transition-delay: .4s;
+
+            &-active {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        &.cart-summary-slide-right-leave {
+            &-active {
+                opacity: 0;
+                transform: translateX(60px);
+            }
+        }
+    }
+}

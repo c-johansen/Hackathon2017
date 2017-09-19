@@ -1,0 +1,29 @@
+.horizontal-spinner {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: transparent;
+    background-repeat: repeat-x;
+    background-size: 14px 10px;
+    background-image:
+        repeating-linear-gradient(
+            45deg,
+            #FFF,
+            #FFF 5px,
+            transparent 5px,
+            transparent 10px
+        );
+    height: 3px;
+    animation: looping-horizontal-spinner .2s linear infinite;
+}
+
+@keyframes looping-horizontal-spinner {
+    from {
+        background-position: 14px 0;
+    }
+
+    to {
+        background-position: 0 0;
+    }
+}

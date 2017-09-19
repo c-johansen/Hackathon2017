@@ -1,0 +1,41 @@
+.ws-inline-message {
+    margin: 16px 0;
+    padding: 0 16px 0 68px;
+    position: relative;
+
+    &--info,
+    &--warning {
+        background: #FFF;
+    }
+
+    &--error {
+        background: #FFF;
+        color: $red;
+    }
+
+    &__body {
+        display: flex;
+        flex-direction: column;
+        min-height: 40px;
+        justify-content: center;
+        padding: 14px 0;
+
+        p {
+            font-size: 13px;
+            margin: 0 0 8px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    > .icon-circle {
+        position: absolute;
+        color: #FFF;
+        background-color: $pale-red;
+        left: 16px;
+        top: 16px;
+        width: 36px;
+    }
+}

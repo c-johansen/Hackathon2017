@@ -1,0 +1,33 @@
+.ws-checkout-substitutions__comment-label {
+    font-family: $gotham;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 22px;
+    display: block;
+    margin: 16px 0;
+    padding-top: 16px;
+    border-top: 1px solid $light-gray;
+}
+
+.ws-checkout-substitutions__comment-input {
+    font-family: $gothamNarrow;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 20px;
+    display: block;
+    width: 100%;
+    height: 100px;
+    padding: 16px;
+    margin: 0 0 16px;
+    background: #FFF;
+    border: solid 1px $light-gray;
+    border-radius: 3px;
+    -webkit-appearance: none;
+}
+
+// iOS onFocus scrollview fix
+.ws-checkout-step--substitutions.ws-checkout-step--input-focus {
+    .ws-checkout-step-content {
+        padding-bottom: 300px;
+    }
+}

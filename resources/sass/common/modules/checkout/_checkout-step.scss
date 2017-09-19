@@ -1,0 +1,37 @@
+$checkout-step-height: 88px;
+
+.ws-checkout-step {
+    position: relative;
+    background-color: $light-gray;
+    transition: background-color 0.5s linear;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 16px;
+        right: 16px;
+        height: 1px;
+        background: $light-darker;
+    }
+
+    &:first-child,
+    &--todo,
+    &--doing {
+        &::before {
+            display: none;
+        }
+    }
+
+    &--doing {
+        background-color: #FFF;
+    }
+
+    &-content {
+        padding: 0 16px 16px;
+
+        &__collapse > .ReactCollapse--content {
+            min-height: calc(100vh - #{$header-height} - #{$checkout-footer-height} - #{$checkout-step-height});
+        }
+    }
+}

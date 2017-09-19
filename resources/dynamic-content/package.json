@@ -1,0 +1,19 @@
+{
+    "name": "md2html",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "devDependencies": {
+        "marked": "^0.3.6",
+        "node-fetch": "^1.7.2"
+    },
+    "scripts": {
+        "prestart": "npm i",
+        "start": "npm run build",
+        "build": "node convertAll.js",
+        "upload": "node uploadTos.js"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {}
+}

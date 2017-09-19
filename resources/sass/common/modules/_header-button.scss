@@ -1,0 +1,30 @@
+.header-button {
+    background-color: transparent;
+    padding: .27em .35em;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 12px;
+
+    .icon {
+        width: 20px;
+        display: block;
+    }
+
+    &--has-text {
+        white-space: nowrap;
+        font-weight: 300;
+
+        &__title {
+            vertical-align: middle;
+            font-size: 15px;
+            line-height: 1;
+        }
+
+        .icon {
+            width: 18px;
+            margin-right: 12px;
+            vertical-align: middle;
+            display: inline-block;
+        }
+    }
+}

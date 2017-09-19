@@ -1,0 +1,51 @@
+.cart-button {
+    display: block;
+    color: #FFF;
+    padding-right: 10px;
+    position: relative;
+
+    &__count {
+        font-size: 10px;
+        border-radius: 50%;
+        width: 20px;
+        background-color: #FFF;
+        height: 20px;
+        position: absolute;
+        border: 1px solid #A02;
+        background-clip: padding-box;
+        color: $red;
+        top: -2px;
+        right: 0;
+        text-align: center;
+        font-weight: 500;
+
+        &__text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            margin-top: .5px;
+            line-height: 1;
+            display: block;
+        }
+
+        &--updated {
+            animation: boop .45s;
+        }
+    }
+
+    .icon {
+        display: block;
+        width: 28px;
+    }
+}
+
+@keyframes boop {
+    from {
+        transform: scale(1.5, 1.5);
+    }
+
+    to {
+        transform: scale(1, 1);
+    }
+}

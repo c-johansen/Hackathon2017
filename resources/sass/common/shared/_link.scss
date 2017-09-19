@@ -1,0 +1,24 @@
+.link {
+    &--red {
+        color: $pale-red;
+
+        .icon {
+            width: 5px;
+            vertical-align: baseline;
+            margin-left: 4px;
+        }
+    }
+}
+
+.external-link {
+    color: $pale-red;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 24px;
+
+    .icon {
+        width: 5px;
+        vertical-align: baseline;
+        margin-left: 5px;
+    }
+}

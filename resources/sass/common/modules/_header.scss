@@ -1,0 +1,26 @@
+.header {
+    padding: 16 + $container-horizontal-gutter $container-horizontal-gutter $container-horizontal-gutter - 4;
+    height: 31px + 16 + $container-horizontal-gutter + 12px;
+    overflow: hidden;
+    box-sizing: border-box;
+    border-bottom: 1px solid rgb(216, 216, 216);
+
+    &__inner {
+        height: $header-content-height;
+        position: relative;
+
+        > * {
+            position: absolute !important;
+            width: 100%;
+            bottom: 0;
+        }
+    }
+
+    &--gray {
+        background-color: $black;
+    }
+
+    &--red {
+        background-color: #FFF;
+    }
+}

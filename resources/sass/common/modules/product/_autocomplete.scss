@@ -1,0 +1,11 @@
+.autocomplete {
+    padding: 16px;
+    font-size: 14px;
+    background-color: #FFF;
+    box-shadow: 0 2px 4px rgba(#000, .04);
+
+    strong {
+        font-weight: bold;
+        color: $pale-red;
+    }
+}

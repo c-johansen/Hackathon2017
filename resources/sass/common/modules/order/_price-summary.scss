@@ -1,0 +1,61 @@
+.ws-price-summary {
+    font-size: 14px;
+    padding: 16px;
+    background-color: #FFF;
+    margin-bottom: 16px;
+
+    &__line {
+        border-bottom: 1px solid $black;
+        padding-bottom: 13px;
+        margin-bottom: 13px;
+        overflow: hidden;
+        font-size: 16px;
+        font-weight: bold;
+
+        &:first-child {
+            border-top: 1px solid $black;
+            padding-top: 13px;
+        }
+
+        &--sum {
+            color: $pale-red;
+            border-bottom: 0;
+            padding-bottom: 0;
+            margin-bottom: 0;
+            border-top: 2px solid $dark-gray;
+            padding-top: 9px;
+            margin-top: -14px;
+        }
+
+        &--vat {
+            color: $gray;
+            font-size: 14px;
+            font-weight: 400;
+            margin-top: 16px 0 5px;
+            padding: 0;
+            text-align: right;
+            border: none;
+        }
+    }
+
+    &__title {
+        float: left;
+        width: 68%;
+        line-height: 1.4;
+
+        &--hi {
+            font-weight: bold;
+        }
+    }
+
+    &__price {
+        width: 30%;
+        float: right;
+        text-align: right;
+        white-space: nowrap;
+    }
+
+    &__heading {
+        margin: 16px 0 10px;
+    }
+}

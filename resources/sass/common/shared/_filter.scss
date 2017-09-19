@@ -1,0 +1,60 @@
+.filter {
+    position: relative;
+    overflow: hidden;
+
+    &__reset-button {
+        position: absolute;
+        top: 0;
+        padding: 10px 10px 10px 14px;
+        box-shadow: 0 0 7px rgba(#000, .14);
+        background-image: linear-gradient(to bottom, rgba($light-gray, 0), $light-gray 5px);
+        left: 0;
+        z-index: 1;
+    }
+
+    &__inner {
+        padding: 10px 10px 10px 88px;
+        overflow: scroll;
+        position: relative;
+        -webkit-overflow-scrolling: touch;
+        display: flex;
+        flex-flow: row nowrap;
+        z-index: 0;
+
+        &__element {
+            flex: none;
+            margin-right: 8px;
+
+            &:last-child {
+                border-right: $container-horizontal-gutter * 2 solid transparent;
+            }
+        }
+    }
+
+    &-button {
+        display: block;
+        padding: 9px 13px;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 16px;
+        background-color: #FFF;
+        border-radius: 3px;
+        overflow: hidden;
+        box-shadow: none;
+        box-shadow: 0 1px 3px rgba(#000, .1);
+
+        &--hi {
+            background-color: $pale-red;
+            color: #FFF;
+        }
+
+        .icon-circle {
+            background-color: #FFF;
+            color: $red;
+            width: 11px;
+            height: 11px;
+            vertical-align: middle;
+            margin-left: 6px;
+        }
+    }
+}

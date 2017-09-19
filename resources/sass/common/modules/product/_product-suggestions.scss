@@ -1,0 +1,106 @@
+.product-suggestions {
+    &__inner {
+        background-color: $black;
+        color: #FFF;
+        padding-bottom: 16px;
+        padding-top: 16px;
+        position: fixed;
+        left: 0;
+        right: 0;
+        bottom: $footer-height;
+        box-sizing: border-box;
+        z-index: 2;
+        height: 103px;
+        transition: height .3s;
+
+        &__wrapper {
+            height: 100%;
+            overflow: hidden;
+        }
+
+        &--small {
+            height: 53px;
+        }
+
+        &--big {
+            height: 123px;
+        }
+
+        &__title {
+            padding: 0 $container-horizontal-gutter;
+            color: rgba(#FFF, .6);
+            font-size: 14px;
+            position: relative;
+            z-index: 3;
+
+            em {
+                color: #FFF;
+                font-weight: 600;
+            }
+        }
+
+        &__placeholder {
+            opacity: .5;
+            margin: 0 $container-horizontal-gutter 0;
+        }
+
+        &__content {
+            margin-top: 10px;
+        }
+
+        &__collapse-button {
+            position: absolute;
+            z-index: 2;
+            top: -6px;
+            color: #FFF;
+            left: 50%;
+            transform: translateX(-50%);
+            padding: 16px 25px;
+
+            .icon {
+                width: 15px;
+                display: block;
+                opacity: .5;
+            }
+        }
+    }
+
+    &__spacer {
+        height: 103px;
+        transition: height .3s;
+
+        &--small {
+            height: 53px;
+        }
+
+        &--big {
+            height: 123px;
+        }
+    }
+
+    &__element {
+        background-color: #FFF;
+        border-radius: 3px;
+        padding: 8px 12px;
+        color: $text-color;
+        font-size: 15px;
+        display: flex;
+        align-items: center;
+        height: 44px;
+
+        &-image {
+            flex: none;
+            width: 40px;
+            height: 40px;
+        }
+
+        &-title {
+            flex: auto;
+            font-size: 15px;
+            font-weight: 500;
+            margin-left: 14px;
+            line-height: 1.25;
+            overflow: hidden;
+        }
+    }
+}

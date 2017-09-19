@@ -1,0 +1,66 @@
+.grid {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    flex: auto;
+    height: 100%;
+}
+
+.box {
+    flex: auto;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+    will-change: scroll-position;
+
+    &--unflex {
+        flex: none;
+        overflow-y: visible;
+        will-change: auto;
+    }
+}
+
+.container {
+    padding: 13px $container-horizontal-gutter;
+
+    &--fluffy {
+        padding: 0 24px 24px;
+        margin-bottom: 27px;
+    }
+
+    &--no-overflow {
+        overflow: hidden;
+    }
+
+    &--tight {
+        padding-top: 0;
+        padding-right: 0;
+    }
+}
+
+.relative {
+    position: relative;
+}
+
+.content-boxes {
+    > .content-box:not(:last-child) {
+        margin-bottom: 1.5em;
+    }
+}
+
+.fill {
+    &--lighter-gray {
+        background-color: rgb(232, 232, 235);
+    }
+
+    &--light-gray {
+        background-color: rgb(217, 217, 222);
+    }
+
+    &--white {
+        background-color: #FFF;
+    }
+}
+
+.nowrap {
+    white-space: nowrap;
+}

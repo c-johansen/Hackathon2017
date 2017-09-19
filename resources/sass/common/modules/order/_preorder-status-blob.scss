@@ -1,0 +1,59 @@
+.preorder-status-blob {
+    padding: 12px $container-horizontal-gutter;
+    background-color: $black;
+    line-height: 1.35em;
+    font-size: 14px;
+    font-weight: 300;
+    color: rgba(#FFF, .8);
+    margin-top: -1px;
+    margin-bottom: -1px;
+
+    &__place {
+        font-size: 16px;
+        margin-bottom: 20px;
+
+        strong {
+            display: block;
+            font-weight: 500;
+            font-size: 20px;
+        }
+    }
+
+    &__time {
+        font-size: 14px;
+        margin-bottom: 20px;
+
+        strong {
+            display: block;
+        }
+    }
+
+    &__x {
+        width: 14px;
+        position: absolute;
+        top: 16px;
+        right: 16px;
+        color: #000;
+
+        .icon {
+            width: 100%;
+        }
+    }
+
+    &__content {
+        padding-left: 42px - $container-horizontal-gutter;
+        position: relative;
+
+        .icon {
+            width: 6px;
+            position: absolute;
+            left: 2px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        strong {
+            color: #FFF;
+        }
+    }
+}

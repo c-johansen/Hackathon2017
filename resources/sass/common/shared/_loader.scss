@@ -1,0 +1,25 @@
+.ws-loader {
+    &,
+    &::after {
+        border-radius: 50%;
+        width: 32px;
+        height: 32px;
+    }
+
+    margin: 0 auto;
+    position: relative;
+    border: 4px solid $pale-red;
+    border-left: 4px solid rgba(0, 0, 0, 0.03);
+    transform: translateZ(0);
+    animation: wsloader 1.1s infinite linear;
+}
+
+@keyframes wsloader {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}

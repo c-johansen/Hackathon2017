@@ -1,0 +1,18 @@
+.ws-auth-encourager {
+    background-color: $black;
+    padding: 13px $container-horizontal-gutter $container-horizontal-gutter;
+    color: #FFF;
+    text-align: center;
+
+    &__title {
+        font-size: 14px;
+        line-height: 1;
+        font-weight: 500;
+        margin-bottom: 13px;
+    }
+
+    .ws-button {
+        color: $pale-red;
+        font-weight: 600;
+    }
+}

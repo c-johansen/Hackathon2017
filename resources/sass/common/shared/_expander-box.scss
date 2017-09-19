@@ -1,0 +1,44 @@
+.ws-expander-box {
+    overflow: hidden;
+
+    &__title {
+        margin: 0;
+    }
+
+    &__toggler {
+        display: block;
+        width: 100%;
+        color: rgba(255, 255, 255, 0.7);
+        background-color: rgb(46, 31, 44);
+        text-align: left;
+        font-size: 16px;
+        line-height: 20px;
+        padding: 16px;
+        cursor: pointer;
+        border: none;
+        transition: color 0.3s linear;
+        position: relative;
+
+        .icon {
+            display: block;
+            width: 20px;
+            height: 12px;
+            position: absolute;
+            right: 18px;
+            top: 50%;
+            margin-top: -6px;
+            transform: rotate(0);
+            transition: transform 0.3s;
+        }
+    }
+
+    &--expanded {
+        .ws-expander-box__toggler {
+            color: #FFF;
+
+            .icon {
+                transform: rotate(-180deg);
+            }
+        }
+    }
+}

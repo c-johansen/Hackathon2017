@@ -1,0 +1,19 @@
+.spinner {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    background-color: $light-gray;
+    right: 0;
+    bottom: 0;
+
+    &::after {
+        content: "...";
+        position: absolute;
+        display: inline-block;
+        top: 50%;
+        left: 50%;
+        font-size: 1.75em;
+        transform: translate(-50%, -50%);
+    }
+}

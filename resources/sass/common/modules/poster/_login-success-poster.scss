@@ -1,0 +1,32 @@
+.login-success-poster {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(#FFF, .75);
+    backdrop-filter: blur(18px);
+    z-index: 10000;
+
+    &__logo {
+        width: 130px;
+        margin: 0 auto 20px;
+
+        .icon {
+            width: 100%;
+            display: block;
+        }
+    }
+
+    &__message {
+        font-size: 41px;
+        line-height: 1.15;
+        font-family: $futuraPassata;
+    }
+
+    &__closer {
+        color: $red;
+        font-size: 41px;
+        margin-top: 10px;
+    }
+}

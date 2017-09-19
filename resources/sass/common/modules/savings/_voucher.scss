@@ -1,0 +1,151 @@
+.voucher {
+    background-color: #FFF;
+    border-radius: 3px;
+    padding: 24px 18px 0;
+    box-shadow: 0 0 5px rgba(#000, .11);
+
+    &:not(:last-child) {
+        margin-bottom: 16px;
+    }
+
+    &--used {
+        .voucher__rebate,
+        .voucher__info {
+            opacity: .2;
+        }
+
+        .voucher__image {
+            opacity: .5;
+        }
+    }
+
+    &__image {
+        width: 258px;
+        margin: 10px auto 0;
+
+        .ws-image,
+        img {
+            height: auto;
+        }
+    }
+
+    &__info {
+        &__title {
+            font-family: $futuraPassata;
+            font-size: 24px;
+            color: $pale-red;
+            line-height: 1;
+            margin-bottom: 7px;
+            text-transform: uppercase;
+            transition: color .2s;
+
+            &--long {
+                font-size: 20px;
+            }
+
+            &--active {
+                color: $green;
+            }
+
+            &--used {
+                color: $text-color;
+            }
+        }
+
+        &__subtitle {
+            font-size: 13px;
+            font-weight: bold;
+            margin-bottom: 4px;
+        }
+    }
+
+    &__description {
+        font-size: 13px;
+        margin-bottom: 10px;
+        line-height: 21px;
+        opacity: .5;
+    }
+
+    &__valid-to {
+        font-size: 13px;
+        color: $pale-red;
+        text-transform: uppercase;
+    }
+
+    &__rebate {
+        margin-right: 85px;
+        text-transform: uppercase;
+        font-size: 10px;
+        letter-spacing: .125em;
+
+        strong {
+            letter-spacing: -.6px;
+            font-size: 38px;
+            display: block;
+            font-weight: normal;
+            font-family: $futuraPassata;
+            margin-top: 4px;
+            line-height: 1;
+        }
+    }
+
+    &__status {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+        margin: 0;
+        font-weight: bold;
+        transition: background-color .2s, color .2s;
+
+        &--active,
+        &--used {
+            font-size: 15px;
+            padding: 12px 16px;
+            border-radius: 2px;
+            line-height: 1;
+            width: 120px;
+            text-align: center;
+            box-sizing: border-box;
+
+            .icon {
+                width: 12px;
+            }
+        }
+
+        &--active {
+            background-color: #FFF;
+            color: $green;
+        }
+
+        &--used {
+            background-color: #FFF;
+            color: $text-color;
+        }
+    }
+
+    &__footer {
+        background-color: $pale-red;
+        color: #FFF;
+        margin: 16px -18px 0;
+        padding: 16px;
+        position: relative;
+        transition: background-color .2s, color .2s;
+
+        &--used {
+            background-color: $light-gray;
+            color: $text-color;
+        }
+
+        &--active {
+            background-color: $green;
+        }
+
+        &__info {
+            margin-top: 13px;
+            font-weight: 300;
+            font-size: 13px;
+            line-height: 18px;
+        }
+    }
+}

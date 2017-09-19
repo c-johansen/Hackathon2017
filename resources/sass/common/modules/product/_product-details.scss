@@ -1,0 +1,62 @@
+.product-details {
+    position: relative;
+
+    &__header {
+        background-color: #FFF;
+        overflow: hidden;
+        padding: 0 $container-horizontal-gutter $container-horizontal-gutter;
+    }
+
+    &__image {
+        margin: 48px auto 18px;
+        width: 144px;
+        height: 144px;
+    }
+
+    &__title {
+        font-family: $futuraPassata;
+        margin-bottom: 5px;
+        margin-top: 5px;
+        line-height: 32px;
+        font-size: 32px;
+    }
+
+    &__campaign {
+        font-size: 13px;
+        text-transform: uppercase;
+        color: $red;
+        margin-top: 5px;
+    }
+
+    &__campaign-icon {
+        width: 54px;
+        margin-top: -54px;
+        color: $pale-red;
+
+        .icon {
+            display: block;
+        }
+    }
+
+    &__price {
+        .ws-price__main {
+            margin-bottom: 6px;
+            font-size: 16px;
+            font-weight: bold;
+        }
+    }
+
+    &__add-to-cart {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: $container-horizontal-gutter;
+    }
+
+    &__buy {
+        position: relative;
+        border-top: 1px solid $light-gray;
+        border-bottom: 1px solid $light-gray;
+        padding: 20px $container-horizontal-gutter $container-horizontal-gutter;
+    }
+}

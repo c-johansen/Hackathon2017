@@ -1,0 +1,32 @@
+
+.ws-checkout-step-footer {
+    @extend %clearfix;
+
+    background-color: $black;
+    padding: 16px;
+
+    &-button {
+        display: block;
+        float: right;
+        margin-left: 16px;
+        color: $pale-red;
+        background-color: $light-gray;
+        font-size: 15px;
+        font-weight: 300;
+        line-height: 20px;
+        padding: 10px 24px;
+        border-radius: 2px;
+        transition: color 0.3s linear, background-color 0.3s linear;
+
+        &--default {
+            color: #FFF;
+            background-color: $pale-red;
+        }
+
+        &:disabled {
+            color: rgba(#FFF, .3);
+            background-color: #000;
+            cursor: default;
+        }
+    }
+}

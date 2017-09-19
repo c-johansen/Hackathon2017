@@ -1,0 +1,74 @@
+
+body {
+    background-color: $light-gray;
+    margin: 0;
+}
+
+* {
+    outline: none;
+    border: none;
+    box-shadow: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0) !important;
+    -webkit-touch-callout: none;
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    background-color: transparent;
+    color: inherit;
+    line-height: inherit;
+    touch-action: manipulation;
+}
+
+code,
+pre {
+    font-family: monospace;
+}
+
+.container {
+    padding: 0 15px 15px;
+    margin: 0 auto;
+    width: 1170px;
+    box-sizing: border-box;
+}
+
+.row {
+    margin-right: -15px;
+    margin-left: -15px;
+    box-sizing: inherit;
+
+    &::before,
+    &::after {
+        display: table;
+        content: " ";
+        clear: both;
+    }
+}
+
+.col-md-4 {
+    width: 33.33333333%;
+    float: left;
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    box-sizing: inherit;
+}
+
+.page-header {
+    padding-bottom: 9px;
+    margin: 40px 0 20px;
+    border-bottom: 1px solid $light-gray;
+}
+
+code {
+    font-size: 130%;
+    color: $pale-red;
+}
+
+.ws-add-to-cart[data-reactroot] {
+    float: right;
+    margin-top: -74px;
+}

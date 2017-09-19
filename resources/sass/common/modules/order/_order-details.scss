@@ -1,0 +1,208 @@
+.ws-order-details {
+    &__header {
+        padding: $container-horizontal-gutter;
+        background-color: #FFF;
+        box-shadow: 0 0 4px rgba(#000, .05);
+
+        &--dark {
+            background-color: lighten($black, 3%);
+            color: #FFF;
+        }
+
+        &__title {
+            font-size: 20px;
+            font-weight: bold;
+            line-height: 21px;
+            margin-bottom: 16px;
+
+            &--solo {
+                margin-bottom: -16px;
+            }
+
+            &__text {
+                display: inline-block;
+                font-weight: bold;
+                font-size: 16px;
+                max-width: 85%;
+                vertical-align: middle;
+            }
+        }
+
+        &__text {
+            font-size: 14px;
+            font-weight: 300;
+            line-height: 22px;
+
+            p:not(:first-child) {
+                margin-top: 10px;
+            }
+        }
+
+        &__can-edit {
+            font-weight: bold;
+            margin: 13px 0;
+            font-size: 16px;
+        }
+
+        &__can-edit-link {
+            color: $pale-red;
+            margin: 13px 0;
+            font-size: 16px;
+            font-weight: bold;
+
+            .link {
+                font-size: 16px;
+            }
+
+            .icon {
+                width: 4px;
+                vertical-align: baseline;
+            }
+        }
+    }
+
+    &__summary {
+        padding: 14px 0 0;
+    }
+
+    &__edit-notice {
+        background-color: #FFF;
+        padding: $container-horizontal-gutter;
+        margin-top: 16px;
+        border-radius: 3px;
+        margin-bottom: -16px;
+        box-shadow: 0 0 5px rgba(#000, .05);
+
+        &__title {
+            font-size: 16px;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+
+        &__text {
+            font-size: 14px;
+            font-weight: 300;
+            line-height: 22px;
+            margin-top: 8px;
+        }
+
+        &__link {
+            color: $pale-red;
+            font-size: 16px;
+            font-weight: bold;
+
+            .icon {
+                width: 5px;
+            }
+        }
+    }
+
+    &__cart {
+        margin: $container-horizontal-gutter 0 0;
+        background-color: #FFF;
+        padding-top: $container-horizontal-gutter;
+
+        &__title {
+            font-size: 18px;
+            font-weight: bold;
+            padding-left: $container-horizontal-gutter;
+            padding-right: $container-horizontal-gutter;
+
+            .icon-circle {
+                margin-right: 6px;
+                top: -1px;
+                position: relative;
+            }
+        }
+    }
+
+    &__settings {
+        padding: 13px $container-horizontal-gutter;
+
+        &__setting {
+            margin-bottom: 5px;
+            font-size: 16px;
+            line-height: 1.4;
+        }
+
+        &__header {
+            padding-left: 56px;
+            position: relative;
+
+            .icon-circle {
+                position: absolute;
+                left: 0;
+                top: 0;
+            }
+        }
+
+        &__answer {
+            font-size: 14px;
+            font-weight: bold;
+            margin-bottom: 16px;
+
+            &:not(:last-child) {
+                border-bottom: 1px solid $light-darker;
+                padding-bottom: 16px;
+            }
+        }
+    }
+
+    .ws-price-summary {
+        margin-bottom: $container-horizontal-gutter;
+        background-color: #FFF;
+    }
+}
+
+.ws-order-confirmation-cart-table {
+    text-align: left;
+    width: 100%;
+    margin: 0;
+
+    &__heading {
+        font-weight: bold;
+        padding-bottom: 5px;
+        text-transform: uppercase;
+        border-bottom: 2px solid #222;
+        color: #222;
+    }
+
+    &__item {
+        &__title {
+            font-weight: bold;
+        }
+
+        &__subtitle {
+            display: block;
+            font-weight: normal;
+        }
+
+        &__product,
+        &__vat,
+        &__price,
+        &__quantity {
+            vertical-align: bottom;
+            border-bottom: 1px dashed $light-gray;
+            padding-bottom: 8px;
+            padding-top: 8px;
+        }
+
+        &__vat,
+        &__price,
+        &__quantity {
+            text-align: right;
+            white-space: nowrap;
+            padding-left: 7px;
+        }
+
+        &:last-child {
+            .ws-order-confirmation-cart-table__item__product,
+            .ws-order-confirmation-cart-table__item__vat,
+            .ws-order-confirmation-cart-table__item__price,
+            .ws-order-confirmation-cart-table__item__quantity {
+                border-bottom: none;
+                padding-bottom: 0;
+            }
+        }
+    }
+}

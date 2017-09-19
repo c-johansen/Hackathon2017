@@ -1,0 +1,24 @@
+$red: rgb(0, 149, 68); // meny red
+$pale-red: rgb(0, 150, 64);
+$blue: #0076DF; // trumf blue
+$green: #46AD4B; // voucher green
+
+$black: #2E2A2E; // pepper
+$dark-gray: #3C3C3C; // anise
+$gray: #8E8A94; // chia
+$light-gray: #F6F6F6; // sesame
+
+$light-darker: rgba($dark-gray, .05);
+
+$text-color: rgb(60, 60, 60);
+$heading-color: $black;
+
+$gotham: "Open Sans",Helvetica,Arial,sans-serif;
+$gothamNarrow: "Open Sans",Helvetica,Arial,sans-serif;
+$futuraPassata: "Helvetica Neue", "Helvetica", sans-serif;
+
+$footer-height: 48px;
+$header-height: 75px;
+$container-horizontal-gutter: 16px;
+$header-content-height: 33px;
+$extended-header-height: 43px + $header-height;

@@ -1,0 +1,76 @@
+.product-search-form {
+    position: relative;
+
+    &__wrapper {
+        position: relative;
+        display: flex;
+        flex: none;
+        flex-flow: row nowrap;
+        align-items: center;
+        align-content: center;
+    }
+
+    &__input-wrapper {
+        flex: auto;
+        align-self: center;
+        top: 1px;
+        margin-right: 8px;
+        position: relative;
+    }
+
+    &__search-icon {
+        position: absolute;
+        top: 50%;
+        left: 10px;
+        transform: translateY(-50%);
+        width: 16px;
+        color: $gray;
+    }
+
+    &__input-field {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 22px;
+        box-sizing: border-box;
+        vertical-align: bottom;
+        border-radius: 3px;
+        background-color: #FFF;
+        padding: 6px 27px 5px 36px;
+        color: $gray;
+        width: 100%;
+
+        &::placeholder {
+            color: $gray;
+        }
+    }
+
+    &__clear-button {
+        position: absolute;
+        top: 50%;
+        right: 7px;
+        border-radius: 25px;
+        background-color: rgba(#FFF, .55);
+        background-clip: padding-box;
+        width: 8px;
+        height: 8px;
+        padding: 4px;
+        display: block;
+        box-sizing: content-box;
+        transform: translateY(-50%);
+        border: 1em solid transparent;
+        margin: 0 -1em;
+
+        .icon {
+            height: 8px;
+            width: auto;
+            display: block;
+            color: darken($red, 5%);
+        }
+    }
+
+    &__buttons {
+        position: relative;
+        align-self: flex-end;
+        white-space: nowrap;
+    }
+}

@@ -1,0 +1,24 @@
+.order-blob {
+    background-color: #FFF;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .05);
+    padding: $container-horizontal-gutter / 1;
+    padding-left: $container-horizontal-gutter / 1 * 1.65 + 30px;
+    position: relative;
+    box-sizing: border-box;
+    height: 100%;
+
+    &__status {
+        font-weight: bold;
+    }
+
+    &__place {
+        opacity: .6;
+    }
+
+    > .icon {
+        width: 30px;
+        position: absolute;
+        top: $container-horizontal-gutter / 1 + 3;
+        left: $container-horizontal-gutter / 1;
+    }
+}

@@ -1,0 +1,52 @@
+language: node_js
+node_js:
+- "8"
+notifications:
+  email:
+    recipients:
+      - tomm.huth@makingwaves.com
+      - jorn.kinderas@makingwaves.com
+    on_success: change
+    on_failure: always
+branches:
+  only:
+  - develop
+  - preprod
+  - production
+before_install:
+- npm config set //registry.npmjs.org/:_authToken $NPM_TOKEN
+install:
+- npm install
+script:
+- npm run build:travis
+before_deploy:
+- if [ -f ${TRAVIS_BUILD_DIR}/.git/shallow ]; then git fetch --unshallow; fi
+- rm .gitignore
+- rm .editorconfig
+- rm .eslintignore
+- rm .eslintrc
+- rm .stylelintrc
+- rm gulpfile.js
+- rm jsconfig.json
+- rm webpack.chainsite.js
+- rm webpack.mobile.js
+- rm -rf node_modules
+deploy:
+- provider: azure_web_apps
+  verbose: true
+  site: meny-react-dev
+  skip_cleanup: true
+  on:
+    branch: develop
+- provider: azure_web_apps
+  verbose: true
+  site: meny-react-preprod
+  skip_cleanup: true
+  on:
+    branch: preprod
+- provider: azure_web_apps
+  verbose: true
+  site: meny-react-prod
+  skip_cleanup: true
+  on:
+    branch: production

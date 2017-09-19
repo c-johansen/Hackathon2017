@@ -1,0 +1,16 @@
+.nutritional-content {
+    > li {
+        display: inline-block;
+        line-height: 1.1;
+        margin-bottom: 4px;
+        margin-right: 7px;
+        padding-right: 7px;
+        border-right: 1px solid #EEE;
+
+        &:last-child {
+            border-right: none;
+            margin-right: 0;
+            padding-right: 0;
+        }
+    }
+}

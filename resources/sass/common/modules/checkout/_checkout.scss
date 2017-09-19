@@ -1,0 +1,62 @@
+$checkout-footer-height: 72px;
+
+@import "radio-items";
+@import "fee-threshold-reminder";
+@import "handover-table";
+@import "checkout-step";
+@import "checkout-step-header";
+@import "checkout-step-footer";
+@import "../order/order-details";
+@import "cart-suggestions";
+
+.ws-checkout {
+    &-page {
+        &--full {
+            height: calc(100vh - #{$header-height});
+            overflow-x: hidden;
+            overflow-y: scroll;
+            -webkit-overflow-scrolling: touch;
+            will-change: scroll-position;
+        }
+    }
+
+    &-content {
+        background: #FFF;
+    }
+
+    &__subtitle {
+        display: block;
+        font-family: $gothamNarrow;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 23px;
+        margin: 0 0 8px;
+    }
+
+    &__sublabel {
+        display: block;
+        font-family: $gothamNarrow;
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 18px;
+        text-transform: uppercase;
+        margin: 0 0 8px;
+    }
+}
+
+.popup__wrapper {
+    .ws-checkout {
+        &-content {
+            height: calc(100vh - #{$header-height} - #{$checkout-footer-height});
+            overflow-x: hidden;
+            overflow-y: scroll;
+            -webkit-overflow-scrolling: touch;
+            will-change: scroll-position;
+        }
+    }
+}
+
+@import "step-cart";
+@import "step-substitutions";
+@import "step-handover-time";
+@import "step-payment";

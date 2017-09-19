@@ -1,0 +1,36 @@
+.stripe-list {
+    &__element {
+        display: flex;
+        flex-direction: row;
+        font-weight: 500;
+
+        &:not(:last-child) {
+            border-bottom: 1px solid $light-darker;
+            padding-bottom: 14px;
+            margin-bottom: 14px;
+        }
+
+        &--full {
+            display: block;
+        }
+
+        &__left {
+            flex: 0;
+            white-space: nowrap;
+        }
+
+        &__right {
+            flex: 1;
+            text-align: right;
+        }
+
+        &__full {
+            flex: 1;
+        }
+
+        &--lo {
+            color: rgba(46, 31, 44, 0.6);
+            font-weight: 400;
+        }
+    }
+}

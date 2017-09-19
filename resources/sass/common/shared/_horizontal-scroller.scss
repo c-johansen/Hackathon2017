@@ -1,0 +1,58 @@
+.horizontal-scroller {
+    padding: 35px  $container-horizontal-gutter   20px;
+    display: flex;
+    overflow-x: scroll;
+    -webkit-overflow-scrolling: touch;
+    flex-direction: row;
+    position: relative;
+    z-index: 1;
+    margin-top: -35px;
+    margin-bottom: -$container-horizontal-gutter;
+
+    &__element {
+        flex: none;
+        width: 90%;
+        margin-right: 1em;
+        border-radius: 3px;
+        overflow: hidden;
+        background-clip: content-box;
+
+        &--small {
+            width: 70%;
+        }
+
+        .product {
+            ///UGLY
+            border-radius: 3px;
+        }
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    &::after {
+        flex: none;
+        display: block;
+        content: "";
+        width: $container-horizontal-gutter;
+    }
+}
+
+.faux-prod-box {
+    background-color: #FFF;
+    border-radius: 2px;
+    padding: .8em;
+    color: $text-color;
+
+    &--tall {
+        padding-top: 2.5em;
+        padding-bottom: 2.5em;
+    }
+
+    &--supertall {
+        padding-top: 11em;
+        padding-left: 0;
+        background-color: transparent;
+    }
+}

@@ -1,0 +1,31 @@
+.ws-checkout-step--payment {
+    // Overrides
+    .ws-price-summary {
+        background: #FFF;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+        margin: 0 -16px 24px;
+        padding: 0 16px 6px;
+
+        &__line:first-child {
+            border-top: none;
+        }
+    }
+
+    .ws-radioitems--payment {
+        margin-bottom: 16px;
+    }
+}
+
+.ws-payment {
+    &__tos-link {
+        display: inline-block;
+        color: $red;
+        text-decoration: underline;
+        font-size: 1em;
+        line-height: inherit;
+        // Button reset
+        background: transparent;
+        border: none;
+        padding: 0;
+    }
+}

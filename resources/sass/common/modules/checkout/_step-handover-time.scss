@@ -1,0 +1,59 @@
+.ws-checkout__button {
+    display: inline-block;
+    background-color: $light-gray;
+    line-height: 24px;
+    padding: 4px 16px;
+    border-radius: 2px;
+
+    &-icon {
+        content: "";
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        width: 13px;
+        height: 100%;
+        margin-top: -12px;
+        margin-left: -6px;
+        transition: opacity 0.5s linear;
+    }
+
+    &--default {
+        color: #FFF;
+        background-color: $pale-red;
+    }
+
+    &--backward,
+    &--forward {
+        width: 48px;
+        height: 40px;
+        line-height: 40px;
+        padding: 0;
+        color: $black;
+        position: relative;
+        text-indent: 100%;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+
+    &--backward {
+        border-radius: 0 2px 2px 0;
+
+        &:disabled .ws-checkout__button-icon {
+            opacity: 0.5;
+        }
+    }
+
+    &--forward {
+        border-radius: 2px 0 0 2px;
+
+        &:disabled .ws-checkout__button-icon {
+            opacity: 0.5;
+        }
+    }
+}
+
+.ws-handover-alcohol {
+    padding-bottom: 24px;
+    border-bottom: 1px solid $light-gray;
+    margin-bottom: 24px;
+}

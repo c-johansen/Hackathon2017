@@ -1,0 +1,10 @@
+.country-of-origin {
+    &__country {
+        margin-left: .35em;
+    }
+
+    * {
+        display: inline-block;
+        vertical-align: baseline;
+    }
+}

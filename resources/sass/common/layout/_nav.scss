@@ -1,0 +1,54 @@
+.nav {
+    background-color: #FFF;
+    text-align: center;
+    border-top: 1px solid rgb(229, 229, 229);
+    color: $dark-gray;
+    height: $footer-height;
+    box-sizing: border-box;
+    user-select: none;
+
+    &__menu {
+        display: flex;
+        margin: 0 2em;
+        align-items: center;
+        height: 100%;
+        justify-content: center;
+
+        &__link {
+            flex: auto;
+            transition: all .2s;
+            max-width: 105px;
+
+            &:active {
+                transform: scale(.8);
+                transition: all .1s;
+            }
+
+            &--active {
+                color: $red;
+            }
+
+            &__icon {
+                width: 44px;
+                display: block;
+                margin: 0 auto;
+                position: relative;
+
+                .icon {
+                    width: 100%;
+                    height: auto;
+                    vertical-align: middle;
+                }
+            }
+
+            &__text {
+                display: none;
+            }
+
+            .link {
+                display: block;
+                padding: 0;
+            }
+        }
+    }
+}

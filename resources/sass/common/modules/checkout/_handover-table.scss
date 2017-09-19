@@ -1,0 +1,30 @@
+.ws-handover-table {
+    margin: 0 -16px;
+    position: relative;
+
+    &__nav {
+        position: relative;
+        z-index: 1;
+        margin-bottom: -40px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__day {
+        &-date {
+            font-family: $gothamNarrow;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 40px;
+            text-align: center;
+            background-color: $black;
+            border-radius: 2px;
+            color: #FFF;
+            padding: 0 16px;
+            margin: 0 0 24px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+    }
+}

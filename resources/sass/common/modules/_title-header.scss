@@ -1,0 +1,45 @@
+.title-header {
+    position: relative;
+
+    &--logo-only {
+        padding-top: 0;
+    }
+
+    &__logo {
+        .icon {
+            height: $header-content-height;
+            margin: 0 auto;
+            width: auto;
+            display: block;
+        }
+    }
+
+    &__close-button {
+        width: 15px;
+        position: relative;
+        top: 1px;
+        margin-right: 9px;
+        display: inline-block;
+        vertical-align: middle;
+
+        .icon {
+            display: block;
+        }
+    }
+
+    &__title {
+        font-family: $futuraPassata;
+        line-height: 1;
+        font-size: 25px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        width: 80%;
+    }
+
+    &__buttons {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+    }
+}

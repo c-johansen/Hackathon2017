@@ -1,0 +1,31 @@
+.ws-price {
+    text-transform: lowercase;
+    font-size: 13px;
+    font-weight: 300;
+
+    &__main {
+        display: inline-block;
+        font-weight: 500;
+        margin-right: 6px;
+
+        &--discounted {
+            background-color: $pale-red;
+            color: #FFF;
+            border-radius: 2px;
+            padding: 1px 4px;
+        }
+    }
+
+    &__per-unit {
+        opacity: .8;
+    }
+
+    &__wrapper {
+        display: block;
+    }
+
+    &__original {
+        text-decoration: line-through;
+        margin-right: 6px;
+    }
+}

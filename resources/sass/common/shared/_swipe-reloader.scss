@@ -1,0 +1,95 @@
+.swipe-reloader {
+    height: 100%;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+
+    &-trigger {
+        background-color: $light-gray;
+        transition: height .35s;
+        position: relative;
+        height: 0;
+        overflow: hidden;
+
+        &--touching {
+            transition: none;
+        }
+
+        &__inner {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+            &__done {
+                width: 22px;
+                animation: spinner-done-pow .3s;
+
+                svg,
+                .icon {
+                    display: block;
+                }
+            }
+
+            &__spinner {
+                position: relative;
+                height: ceil(8 * 1.75 * 2) + px;
+                width: ceil(8 * 1.75) + px;
+                margin-left: ceil(8 * 1.75) + px;
+                transform-origin: 0 50%;
+                margin-right: -1px;
+                margin-bottom: -1px;
+
+                &--spinning {
+                    animation: spinner-spin linear infinite 1.3s;
+                }
+
+                &__bar {
+                    height: 8px;
+                    transition: opacity .3s;
+                    position: absolute;
+                    transform-origin: 50% 175%;
+                    top: 0;
+                    left: -1px;
+                    border-radius: 2px;
+                    width: 2px;
+                    background-color: rgba(#000, .65);
+                    opacity: 0;
+
+                    &--active {
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
+
+    pre {
+        color: #FFF;
+        background-color: #000;
+        padding: 5px;
+        font-size: 10px;
+        font-family: monospace;
+        z-index: 100;
+        display: none;
+    }
+}
+
+@keyframes spinner-spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes spinner-done-pow {
+    from {
+        transform: scale(1.85);
+    }
+
+    to {
+        transform: scale(1);
+    }
+}

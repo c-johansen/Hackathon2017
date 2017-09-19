@@ -1,0 +1,22 @@
+.ws-handover-picker__detail {
+    margin-top: 24px;
+}
+
+.ws-handover-picker__message {
+    margin: 16px 0;
+}
+
+.ws-expander-box,
+.ws-radioitems--location-HJEM {
+    margin: 0 0 16px;
+    background-color: #FFF;
+    border-radius: 3px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.ws-expander-box {
+    &:last-child {
+        margin-bottom: 0;
+    }
+}

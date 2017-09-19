@@ -1,0 +1,17 @@
+node_modules/
+dist/
+public/js/*
+public/css/*
+public/gfx/*
+public/fonts/*
+npm-debug.log
+.env
+.idea
+.DS_Store
+.npmrc
+launch.json
+public/css/
+public/gfx/
+public/js/
+.vscode
+public/fonts

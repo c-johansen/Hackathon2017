@@ -1,0 +1,56 @@
+.offer-campaign-list {
+    margin: 16px 0 0;
+
+    &__element {
+        height: 80px;
+        border-radius: 3px;
+        position: relative;
+        overflow: hidden;
+        display: block;
+        background-size: cover;
+        background-position: top left;
+        background-color: $red;
+
+        &--solo {
+            margin: 0 16px 4px;
+        }
+
+        &::before {
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            z-index: 0;
+            content: "";
+            background-image: linear-gradient(to bottom, transparent 25%, rgba(#000, .65));
+        }
+
+        .link {
+            display: block;
+            height: 100%;
+            width: 100%;
+            position: relative;
+            z-index: 1;
+        }
+
+        &__title {
+            position: absolute;
+            bottom: 8px;
+            right: 24px;
+            line-height: 1.25;
+            font-size: 16px;
+            color: #FFF;
+            text-shadow: 0 0 .5em #000;
+            left: 10px;
+            z-index: 1;
+            font-weight: bold;
+
+            .icon {
+                width: 6px;
+                vertical-align: baseline;
+                margin-left: 2px;
+            }
+        }
+    }
+}

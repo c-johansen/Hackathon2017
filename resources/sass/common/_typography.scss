@@ -1,0 +1,36 @@
+html {
+    font-family: $gothamNarrow;
+    color: $text-color;
+    font-size: 12px;
+}
+
+%heading {
+    color: $heading-color;
+    font-weight: 500;
+}
+
+.single-line-only {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.sub {
+    color: rgba(#3C3C3B, .7);
+}
+
+.light {
+    font-weight: 300;
+}
+
+.intro {
+    margin-top: .5em;
+    margin-bottom: 1.35em;
+    font-size: 13px;
+    line-height: 1.6;
+    color: #777;
+}
+
+.text-light {
+    font-weight: 300;
+}

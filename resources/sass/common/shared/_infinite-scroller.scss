@@ -1,0 +1,18 @@
+.infinite-scroller {
+    -webkit-overflow-scrolling: touch;
+    overflow-y: scroll;
+    will-change: scroll-position;
+    backface-visibility: hidden;
+    height: 100%;
+
+    &__loading {
+        padding: 15px 0;
+        text-align: center;
+        display: block;
+    }
+
+    &__button {
+        text-align: center;
+        margin: 20px 0;
+    }
+}

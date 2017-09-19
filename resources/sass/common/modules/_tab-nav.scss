@@ -1,0 +1,43 @@
+.tab-nav {
+    overflow: hidden;
+    width: 100%;
+    box-shadow: 0 1px 3px rgba(#000, .1);
+    position: relative;
+    z-index: 1;
+
+    &__wrapper {
+        background-color: #FFF;
+        display: flex;
+        flex-direction: row;
+    }
+
+    &__item {
+        flex: 1;
+        margin: 0 1px;
+    }
+
+    &__link {
+        text-transform: uppercase;
+        display: block;
+        text-align: center;
+        padding: 12px 0 10px;
+        font-size: 14px;
+        font-weight: bold;
+        color: #999;
+        transition: color 1.225s;
+
+        &--active {
+            animation: tab-nav-activate .25s forwards;
+        }
+    }
+}
+
+@keyframes tab-nav-activate {
+    from {
+        color: $text-color;
+    }
+
+    to {
+        color: $red;
+    }
+}

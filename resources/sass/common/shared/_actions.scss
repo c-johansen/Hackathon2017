@@ -1,0 +1,45 @@
+.actions {
+    margin: -14px -#{$container-horizontal-gutter};
+    color: $pale-red;
+    font-weight: bold;
+
+    .external-link,
+    .link,
+    .button {
+        color: inherit;
+        font-weight: inherit;
+    }
+
+    .external-link {
+        .icon {
+            width: 11px;
+        }
+    }
+
+    .icon {
+        position: absolute;
+        top: 50%;
+        right: $container-horizontal-gutter;
+        transform: translateY(-50%);
+        width: 8px;
+        margin-bottom: 14px;
+        color: inherit;
+    }
+
+    &--blue {
+        .external-link,
+        .link,
+        .button {
+            color: $blue;
+        }
+    }
+
+    &__element {
+        position: relative;
+        padding: 14px $container-horizontal-gutter;
+
+        &:not(:last-child) {
+            border-bottom: 1px solid $light-gray;
+        }
+    }
+}
