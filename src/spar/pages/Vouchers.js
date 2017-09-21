@@ -14,10 +14,10 @@ export default class Home extends PureComponent {
                 <App.Main>
                     <div className="container">
 
-                        <Voucher title="Dusjsåpe" discount="30" subtitle="LANO, 250 ML" image="/images/" type={VoucherType.DiscountPercentage} />
-                        <Voucher title="MELLOMBAR" discount="40" subtitle="HAVRE/KOKOS, 138 G, ELDORADO" image="/images/" type={VoucherType.NormalPrice} />
-                        <Voucher title="TØYVASK ULTRA/COLOR" discount="30" subtitle="1,1 KG, UNIK " image="/images/" type={VoucherType.TakeThreePayForTwo} />
-                        <Voucher title="En valgfri Ali kaffe" discount="40" subtitle="ORIGINAL/MØRKBRENT, FILTER-/KOK, 250 G" image="/images/" type={VoucherType.DiscountAmount} />
+                        <Voucher title="Dusjsåpe" discount="30" subtitle="LANO, 250 ML" image="/images/lano.png" type={VoucherType.DiscountPercentage} />
+                        <Voucher title="MELLOMBAR" discount="40" subtitle="HAVRE/KOKOS, 138 G, ELDORADO" image="/images/mellom.png" type={VoucherType.NormalPrice} />
+                        <Voucher title="TØYVASK ULTRA/COLOR" discount="30" subtitle="1,1 KG, UNIK " image="/images/ultra.png" type={VoucherType.TakeThreePayForTwo} />
+                        <Voucher title="En valgfri Ali kaffe" discount="40" subtitle="ORIGINAL/MØRKBRENT, FILTER-/KOK, 250 G" image="/images/ali.png" type={VoucherType.DiscountAmount} />
                     </div>
                 </App.Main>
             </App.Top>

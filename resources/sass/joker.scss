@@ -25,3 +25,64 @@
         }
     }
 }
+
+.spar-single-products {
+    overflow: hidden;
+    padding: 16px;
+    margin: 0 -1.5em;
+}
+
+.spar-link {
+    margin: 15px 20px 30px;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.spar-heading {
+    font-size: 20px;
+    font-weight: bold;
+    border-bottom: 2px solid #F01516 ;
+    display: inline-block;
+    margin-left: 16px;
+    margin-top: 16px;
+}
+
+.spar-single-product {
+    float: left;
+    width: 50%;
+    box-sizing: border-box;
+    padding: 1em 1.5em 0;
+    font-size: 14px;
+
+    &__image {
+        width: 50%;
+        height: 100px;
+        margin: 0 0 .5em 0;
+    }
+
+    &__price {
+        font-size: 50px;
+        font-weight: 900;
+        font-family: "Open Sans";
+        color: #F01516;
+        line-height: 1;
+        position: relative;
+
+        .des {
+            font-size: .4em;
+            position: absolute;
+            top: .75em;
+            left: 100%;
+            display: block;
+        }
+    }
+
+    &__title {
+        font-weight: 600;
+    }
+
+    &__title,
+    &__subtitle {
+        display: block;
+    }
+}
