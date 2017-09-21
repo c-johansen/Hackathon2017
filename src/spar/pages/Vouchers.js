@@ -7,11 +7,11 @@ export default class Home extends PureComponent {
         return (
             <App.Top>
                 <App.Header>
-                    <HomeHeader />
+                    <HomeHeader title="Kuponger"/>
                 </App.Header>
                 <App.Main>
                     <div className="container">
-                        <p>Dette er starten til Spars app</p>
+                        <p>Kuponger her</p>
                     </div>
                 </App.Main>
             </App.Top>

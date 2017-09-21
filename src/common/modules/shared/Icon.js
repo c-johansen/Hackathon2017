@@ -96,10 +96,10 @@ const ViewBox = {
     [IconType.MatmerkNytNorge]: "0 0  87 97",
 
     // nav icons
-    [IconType.NavSearch]: "0 0 50 44",
-    [IconType.NavHome]: "0 0 50 44",
-    [IconType.NavProfile]: "0 0 50 44",
-    [IconType.NavSavings]: "0 0 50 44"
+    [IconType.NavSearch]: "0 0 44 44",
+    [IconType.NavHome]: "0 0 62 39",
+    [IconType.NavProfile]: "0 0 42 41",
+    [IconType.NavSavings]: "0 0 48 48"
 }
 
 export function IconCircle(props) {

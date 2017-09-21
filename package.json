@@ -18,7 +18,7 @@
         "size:chainsite": "webpack --config webpack.chainsite.js --env.NODE_ENV=production --json | webpack-bundle-size-analyzer",
         "watch:mobile": "webpack --watch --config webpack.mobile.js & gulp",
         "watch:chainsite": "webpack --config webpack.chainsite.js --watch & gulp chainsite:watch",
-        "run:mobile": "npm run watch:mobile",
+        "run:mobile": "npm run watch:mobile & gulp",
         "run:chainsite": "npm run watch:chainsite & npm start",
         "lint": "eslint src/**/*",
         "lint:debug": "stylelint resources/sass/**/*.scss; eslint src/**/*; exit 0",

@@ -8,7 +8,7 @@ export default class HomeHeader extends Component {
             <RedHeader>
                 <div className="back-header  ">
                     <div className="back-header__title" style={{ textAlign: "center"}}>
-                        Hjem
+                        {this.props.title || "Hjem"}
                     </div>
                 </div>
             </RedHeader>

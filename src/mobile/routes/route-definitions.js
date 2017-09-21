@@ -1,17 +1,25 @@
 import React from "react"
-import { Route } from "react-router-dom"
-import Debug from "../../common/modules/debug/pages/Debug"
-import SparHome from "../../spar/pages/Home"
+import { Route, Redirect } from "react-router-dom"
+import Feed from "../../spar/pages/Feed"
+import Vouchers from "../../spar/pages/Vouchers"
+import Wheel from "../../spar/pages/Wheel"
+import Favorites from "../../spar/pages/Favorites"
 import NotFound from "./NotFound"
 
 let i = 0
 
 export default [
-    <Route path={"/debug"} key={i++}>
-        <Debug />
+    <Route path={"/feed"} key={i++}>
+        <Feed />
     </Route>,
-    <Route path={"/"} key={i++}>
-        <SparHome />
+    <Route path={"/favorites"} key={i++}>
+        <Favorites />
+    </Route>,
+    <Route path={"/vouchers"} key={i++}>
+        <Vouchers />
+    </Route>,
+    <Route path="/" exact key={i++}>
+        <Wheel />
     </Route>,
     <Route key={i++}>
         <NotFound />
