@@ -23,14 +23,15 @@ export default class Onboarding extends Component {
                             <div className="onboarding__icon">
                                 <img src="/images/sparlogo.svg" />
                             </div>
-                            <h1 className="onboarding__title">Velkommen til vår nettbutikk</h1>
-                            <div className="onboarding__description">
-                                <p> Du kan planlegge og gjennomføre din neste handel hos Meny! </p>
-                                <p> Du får også tilgang til kuponger og alle dine fordeler som Meny-kunde.</p>
+                            <h1 className="trumf-login-heading"><Icon type={IconType.TrumfLogo} />Logg in med Trumf</h1>
+                            <div className="login">
+                                <input value="E-post eller mobilnummer" />
+                                <input value="Passord" />
                             </div>
                             <div className="onboarding__buttons">
-                                <Button onClick={(e) => this.setIndex(1, e)} className="ws-button ws-button--wide ws-button--red">Neste</Button>
+                                <Button onClick={(e) => this.setIndex(1, e)} className="ws-button ws-button--wide ws-button--red">Logg inn</Button>
                             </div>
+                            <div className="trumf-on-link">Bli medlem</div>
                         </div>
                     </Screen>
                     <Screen>
@@ -38,27 +39,23 @@ export default class Onboarding extends Component {
                             <div className="onboarding__icon">
                                 <img src="/images/sparlogo.svg" />
                             </div>
-                            <h1 className="onboarding__title">Du kan handle i vår nettbutikk</h1>
-                            <div className="onboarding__description">
-                                <p><strong>Du kan bruke handlevognen som en handleliste i butikken, eller du kan sende inn en bestilling til Meny Nettbutikk.</strong></p>
-                                <p>Meny Nettbutikk er tilgjengelig i utvalgte områder, og tilbyr både henting av varer på hentepunkt og hjemlevering.</p>
-                            </div>
+
+                            <h1 className="trumf-login-heading">Velg butikk</h1>
+
+                            <ul className="stores-pick">
+                                <li className="yes">
+                                    Spar Bjølsen
+                                </li>
+                                <li className="">
+                                    Spar Tåsen
+                                </li>
+                                <li className="">
+                                    Spar Kjelsås
+                                </li>
+                            </ul>
+
                             <div className="onboarding__buttons">
-                                <Button onClick={(e) => this.setIndex(2, e)} className="ws-button ws-button--wide ws-button--red">Neste</Button>
-                            </div>
-                        </div>
-                    </Screen>
-                    <Screen>
-                        <div className="ws-poster ws-poster--from-top">
-                            <div className="onboarding__icon">
-                                <img src="/images/sparlogo.svg" />
-                            </div>
-                            <h1 className="onboarding__title">Kom i gang</h1>
-                            <p className="onboarding__description">For å få den beste opplevelsen av appen anbefaler vi deg å logge inn med Trumf. </p>
-                            <div className="onboarding__buttons">
-                                <LoginButton className="ws-button ws-button--wide ws-button--red" onSuccess={this.props.hideOnboarding}>Logg inn med Trumf</LoginButton>
-                                <Button className="ws-button ws-button--wide ws-button--white">Bli Trumf medlem</Button>
-                                <Button className="ws-button ws-button--wide ws-button--transparent" onClick={this.props.hide}>Fortsett uten å logge inn <Icon type={IconType.ChevronRight} /></Button>
+                                <Button onClick={() => this.props.hide()} className="ws-button ws-button--wide ws-button--red">Neste</Button>
                             </div>
                         </div>
                     </Screen>

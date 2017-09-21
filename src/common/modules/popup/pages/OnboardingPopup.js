@@ -14,7 +14,6 @@ export class OnboardingPopup extends Component {
         return (
             <Popup close={hide} isOpen={isOpen} partial={false} counter={counter}>
                 <Grid>
-                    <Button onClick={hide} className="close-button close-button--inverted"><Icon type={IconType.X} /></Button>
                     <Onboarding hide={hide} hideOnboarding={this.props.hide} />
                 </Grid>
             </Popup>

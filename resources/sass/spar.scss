@@ -170,3 +170,144 @@
         margin-bottom: 1em;
     }
 }
+
+.login {
+    input {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 1.125em 1.35em;
+        color: #777;
+        background-color: #FFF;
+        border-radius: 2px;
+        margin-bottom: .75em;
+    }
+}
+
+.trumf-on-link {
+    text-decoration: underline;
+    margin-top: 20px;
+    font-size: 18px;
+    text-align: center;
+    opacity: .85;
+}
+
+.trumf-login-heading {
+    font-size: 20px;
+    margin-bottom: 20px;
+    border-top: 30px solid transparent;
+
+    .icon {
+        width: 35px;
+        margin-right: 10px;
+        vertical-align: middle;
+    }
+}
+
+.stores-pick {
+    border-radius: 2px;
+    overflow: hidden;
+    font-size: 15px;
+
+    > li {
+        background-color: rgba(#FFF, .8);
+        padding: 20px 0;
+        color: $text-color;
+
+        &.yes {
+            background-color: #FFF;
+            font-weight: bold;
+        }
+    }
+}
+
+
+.wheely {
+    min-height: 100%;
+    background-color: #009540;
+    color: #FFF;
+}
+
+.wheel{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 93%;
+    transform: rotate(0deg);
+}
+
+.spinny {
+    padding-top: 16px;
+    margin-top: 25px;
+    color: $dark-gray;
+    font-weight: 600;
+    padding-bottom: 16px;
+    text-transform: uppercase;
+}
+
+.spinthewheel{
+    animation-name: spin;
+    animation-duration: 4000ms;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+    animation-delay: 300ms;
+    animation-fill-mode: both;
+}
+
+.wheel-logo {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2.5em;
+    margin-bottom: 1em;
+    display: block;
+    position: relative;
+    z-index: 1;
+}
+
+.showPrize{
+    visibility: visible;
+}
+
+.hidePrize{
+    visibility:hidden;
+}
+
+.prizeImage{
+    width: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@keyframes spin{
+    from { transform: rotate(0deg); }
+    to { transform: rotate(2860deg); }
+}
+
+.prize {
+    margin-top: -2.35em;
+    width: 80%;
+    border-radius: 3px;
+    background-color: #FFF;
+    padding: 3.5em 2em 2em;
+    color: $text-color;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 16px;
+    text-align: center;
+
+    &__title {
+        font-size: 20px;
+        font-weight: 600;
+        text-transform: uppercase;
+        margin-bottom: 2em;
+    }
+
+    strong {
+        font-weight: 900;
+    }
+
+    .icon {
+        margin-bottom: 2em;
+    }
+}

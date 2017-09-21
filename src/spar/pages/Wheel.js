@@ -2,40 +2,42 @@ import React, { PureComponent } from "react"
 import HomeHeader from "../HomeHeader"
 import { App } from "../../common/modules/app/markup"
 import { withRouter } from "react-router"
-import Dialog from "../../common/modules/shared/RawDialog"
+import Only from "../../common/modules/shared/Only"
+import Icon, { IconType } from "../../common/modules/shared/Icon"
 
 export class Home extends PureComponent {
     state = { hasClicked: false, showPrize: false };
 
     goToOffers() {
-        this.setState({ showPrize: false });
-        this.props.history.push("/feed");
+        this.setState({ showPrize: false })
+        this.props.history.push("/feed")
     }
     render() {
         return (
             <App.Top>
-                <App.Header>
-                    <HomeHeader title="Sparehjulet" />
-                </App.Header>
-                <App.Main>
-                    <div className="container bodyText">
-                        <p>Wheel</p>
-                        <img className="wheelArrow" src="/images/arrow_down_red.png" />
-                        <img className={this.state.hasClicked ? "spinthewheel wheel" : "waiting wheel"}
-                            onClick={() => this.setState({ hasClicked: true })} src="/images/sparhjulet_small.jpg"
-                            onAnimationEnd={() => this.setState({ showPrize: true })} />
+                <App.Main extended>
+                    <div className="container   wheely">
+                        <img className="wheel-logo" src="/images/lykkelogo.svg" />
 
-                        <Dialog className="bodyText" isOpen={this.state.showPrize} close={() => this.setState({ showPrize: false })}>
-                            <h1 className="title">Gratulerer!</h1>
-                            <p>Vi spanderer en boks Grønne druer fra Bama ved ditt neste kjøp</p>
-                            <img src="/images/druer.jpg" className="prizeImage" />
-                            <p>Du finner premien din under "Mine favortitter"</p>
-                            <div>
-                                <button type="button" className="ws-button ws-button--wide ws-button--red"
-                                    onClick={this.goToOffers.bind(this)}> Se våre tilbud</button>
+                        <Only if={this.state.showPrize}>
+                            <div className="prize">
+                                <div className="prize__title">Gratulerer! 🎉 </div>
+                                <Icon type={IconType.TrumfLogo} />
+                                <div>Du får <strong>5 %</strong> ekstra Trumf-bonus neste gang du handler hos Spar!</div>
                             </div>
 
-                        </Dialog>
+                            <button type="button" className="spinny ws-button ws-button--wide ws-button--white" onClick={this.goToOffers.bind(this)}> Se våre tilbud <Icon type={IconType.ChevronRight} /></button>
+                        </Only>
+
+                        <Only if={!this.state.showPrize}>
+                            <img src="/images/pil.svg" />
+                            <img className={this.state.hasClicked ? "spinthewheel wheel" : "waiting wheel"}
+                                src="/images/hjul.png"
+                                onAnimationEnd={() => setTimeout(() => this.setState({ showPrize: true }), 400)} />
+
+                            <button onClick={() => this.setState({ hasClicked: true })} type="button" className="spinny ws-button ws-button--wide ws-button--white">Spinn &amp; vinn</button>
+                        </Only>
+
                     </div>
                 </App.Main>
             </App.Top>

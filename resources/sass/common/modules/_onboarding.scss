@@ -1,9 +1,12 @@
 .onboarding {
     text-align: center;
-    background-color: $black;
+    background: url(../images/wood.png) $black top left repeat;
+    background-size: cover;
     color: #FFF;
 
     &__icon {
+        margin-top: 80px;
+
         .icon {
             display: block;
             width: 30px;
@@ -19,7 +22,7 @@
 
     &__buttons {
         .ws-button {
-            margin-top: 20px;
+            margin-top: 10px;
         }
     }
 

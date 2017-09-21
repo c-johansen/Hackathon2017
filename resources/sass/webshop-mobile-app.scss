@@ -87,47 +87,4 @@
 @import "common/modules/header";
 @import "common/modules/button-title";
 @import "common/modules/global-error";
-@import "joker";
-
-.wheel{
-    width: 400px;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-}
-.spinthewheel{
-    width: 400px;
-    animation-name: spin;
-    animation-duration: 4000ms;
-    animation-iteration-count: 1;
-    animation-timing-function:ease-in-out;
-    animation-delay: 300ms;
-}
-
-.wheelArrow{
-    width: 40px;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-}
-
-.showPrize{
-    visibility: visible;
-}
-
-.hidePrize{
-    visibility:hidden;
-}
-
-.prizeImage{
-    width: 300px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-@keyframes spin{
-    from { transform: rotate(0deg); }
-    to { transform: rotate(2880deg); }
-}
-
+@import "spar";

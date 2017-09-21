@@ -16,7 +16,7 @@ const init = {
         counter: 0
     },
     onboardingPopup: {
-        visible: false,
+        visible: true,
         counter: 0
     },
     tosPopup: {
