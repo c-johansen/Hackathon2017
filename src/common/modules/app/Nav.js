@@ -4,7 +4,7 @@ import InstantLink from "../shared/InstantLink"
 import Only from "../shared/Only"
 import { withRouter } from "react-router"
 import { connect } from "react-redux"
-import { clearFilter as clearProductsFilter,  clearQuery as clearProductsQuery } from "../../data/store/actions/products"
+import { clearFilter as clearProductsFilter, clearQuery as clearProductsQuery } from "../../data/store/actions/products"
 import { clearFilter as clearMostPurchasedProductsFilter } from "../../data/store/actions/mostPurchasedProducts"
 import { clearFilter as clearGenericOffersFilter } from "../../data/store/actions/genericOffers"
 import css from "classnames"
@@ -27,14 +27,14 @@ export class Nav extends React.PureComponent {
         this.props.clearProductsQuery()
         this.props.clearMostPurchasedProductsFilter()
     }
-    resetGenericOffers(){
+    resetGenericOffers() {
         this.props.clearGenericOffersFilter()
     }
     render() {
         const path = this.props.location.pathname
         const isVoucher = path.includes("/favorites")
         const isUser = path === "/" || path === "/wheel"
-        const isSearch = path.includes( "/vouchers")
+        const isSearch = path.includes("/vouchers")
         const isHome = path.includes("/feed")
 
         return (
@@ -55,7 +55,7 @@ export class Nav extends React.PureComponent {
                         className={css("nav__menu__link", { "nav__menu__link--active": isHome })} >
                         <InstantLink to="/feed">
                             <span className="nav__menu__link__icon" style={{ width: 28 }}   >
-                                <Icon type={IconType.NavHome } />
+                                <Icon type={IconType.NavHome} />
                             </span>
                             <span className="nav__menu__link__text">
                                 Tilbud
@@ -75,7 +75,7 @@ export class Nav extends React.PureComponent {
                     <li className={css("nav__menu__link", { "nav__menu__link--active": isVoucher })}>
                         <InstantLink to="/favorites"  >
                             <span className="nav__menu__link__icon" style={{ width: 23 }} >
-                                <Icon type={IconType.NavSavings} />
+                                <Icon type={IconType.ThumbsUp} />
                             </span>
                             <span className="nav__menu__link__text">
                                 Favoritter
