@@ -28,6 +28,7 @@ export const IconType = {
     CartFull: "cart-full",
     Rebate: "rebate",
     Handle: "handle",
+    ThumbsUp: "thumbs-up",
 
     // colored
     MenyLogo: "meny-logo",
@@ -79,6 +80,7 @@ const ViewBox = {
     [IconType.CartFull]: "0 0 24 23",
     [IconType.Rebate]: "0 0 54 54",
     [IconType.Handle]: "0 0 15 6",
+    [IconType.ThumbsUp]: "0 0 45 42",
 
     // colored
     [IconType.MenyLogo]: "0 0 141 60",
