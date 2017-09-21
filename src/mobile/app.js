@@ -35,13 +35,7 @@ EventBridge.listen(WebAppEvent.ReactCanMount, () => {
             <Router>
                 <Routes />
 
-                <CheckoutPopup />
-                <CartPopup />
-                <ProductPopup />
                 <OnboardingPopup />
-                <TosPopup />
-                <HandoverPickerPopup />
-                <AuthFlasher />
             </Router>
         </Provider>,
         document.getElementById("app")

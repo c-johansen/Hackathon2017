@@ -34,11 +34,11 @@
             border-bottom-width: 15px;
             transition: all .2s;
             border-radius: 50%;
-            opacity: .9;
+            opacity: .4;
             background-clip: padding-box;
 
             &--active {
-                opacity: 1;
+                opacity: .9;
                 background-color: $pale-red;
             }
         }
