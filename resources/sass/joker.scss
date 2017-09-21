@@ -1,0 +1,27 @@
+.joker {
+    &-campaign-big {
+        margin-bottom: 1em;
+        position: relative;
+
+        img {
+            width: 100%;
+            display: block;
+            height: auto;
+        }
+
+        p {
+            border-radius: 2em;
+            background-color: rgba(#FFF, .85);
+            padding: .5em 1.25em;
+            position: absolute;
+            bottom: 1em;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .icon {
+            color: inherit;
+            width: 5px;
+        }
+    }
+}

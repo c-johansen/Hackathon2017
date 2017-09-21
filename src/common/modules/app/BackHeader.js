@@ -34,9 +34,6 @@ export class BackHeader extends React.PureComponent {
                         <Icon type={IconType.ChevronLeft} />
                         <span className="ws-visually-hidden">{this.props.backTitle}</span>
                     </Button>
-                    <div className="back-header__cart-button">
-                        {this.props.hasCartButton ? <CartButton /> : null}
-                    </div>
                     <span className="back-header__title" role="presentational" > {this.props.title}</span>
                 </div>
             </RedHeader>
