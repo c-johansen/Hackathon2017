@@ -88,16 +88,19 @@
 @import "common/modules/button-title";
 @import "common/modules/global-error";
 
+.wheel{
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
 .spinthewheel{
     width: 400px;
     animation-name: spin;
     animation-duration: 4000ms;
     animation-iteration-count: 1;
     animation-timing-function:ease-in-out;
-    animation-delay: 1000ms;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
+    animation-delay: 300ms;
 }
 
 .wheelArrow{
