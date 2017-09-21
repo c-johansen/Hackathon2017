@@ -22,10 +22,10 @@ const keys = {
 export default async function (store) {
     LoggerConfig.turnOffAllFrameworkLoggers()
     setup({
-        apiKey: keys[env],
-        chainId: process.env.CHAIN_ID,
-        userToken: LocalStorage.get(App.LocalStorage.UserToken),
-        environment: env
+        apiKey: process.env.API_KEY_PROD,
+        chainId: "1210", // process.env.CHAIN_ID,
+        userToken: "bearer ceb4e660-bfce-4dba-96df-670c7eca6aaf",// LocalStorage.get(App.LocalStorage.UserToken),
+        environment: Environment.PRODUCTION // env
     })
 
     if (token) {
