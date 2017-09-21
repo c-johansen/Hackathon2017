@@ -23,7 +23,7 @@ export default class Onboarding extends Component {
                             <div className="onboarding__icon">
                                 <img src="/images/sparlogo.svg" />
                             </div>
-                            <h1 className="trumf-login-heading"><Icon type={IconType.TrumfLogo} />Logg in med Trumf</h1>
+                            <h1 className="trumf-login-heading"><Icon type={IconType.TrumfLogo} />Logg inn med Trumf</h1>
                             <div className="login">
                                 <input value="E-post eller mobilnummer" />
                                 <input value="Passord" />
@@ -44,13 +44,13 @@ export default class Onboarding extends Component {
 
                             <ul className="stores-pick">
                                 <li className="yes">
-                                    Spar Bjølsen
+                                    SPAR Kastellet
                                 </li>
                                 <li className="">
-                                    Spar Tåsen
+                                    SPAR Tåsen
                                 </li>
                                 <li className="">
-                                    Spar Kjelsås
+                                    SPAR Kjelsås
                                 </li>
                             </ul>
 

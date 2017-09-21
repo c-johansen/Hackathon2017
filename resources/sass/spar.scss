@@ -223,6 +223,8 @@
 
 .wheely {
     min-height: 100%;
+    padding-bottom:0;
+    box-sizing: border-box;
     background-color: #009540;
     color: #FFF;
 }
@@ -258,7 +260,7 @@
     margin-left: auto;
     margin-right: auto;
     margin-top: 2.5em;
-    margin-bottom: 1em;
+    margin-bottom: .5em;
     display: block;
     position: relative;
     z-index: 1;
