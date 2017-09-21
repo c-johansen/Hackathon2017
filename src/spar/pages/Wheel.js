@@ -12,6 +12,8 @@ export default class Home extends PureComponent {
                 <App.Main>
                     <div className="container">
                         <p>Wheel</p>
+                        <img className="wheelArrow" src="/images/arrow_down_red.png" />
+                        <img className="spinthewheel" src="/images/wheel_test.jpg" />
                     </div>
                 </App.Main>
             </App.Top>

@@ -87,3 +87,28 @@
 @import "common/modules/header";
 @import "common/modules/button-title";
 @import "common/modules/global-error";
+
+.spinthewheel{
+    width: 400px;
+    animation-name: spin;
+    animation-duration: 4000ms;
+    animation-iteration-count: 1;
+    animation-timing-function:ease-in-out;
+    animation-delay: 1000ms;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.wheelArrow{
+    width: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+@keyframes spin{
+    from { transform: rotate(0deg); }
+    to { transform: rotate(2880deg); }
+}
+
