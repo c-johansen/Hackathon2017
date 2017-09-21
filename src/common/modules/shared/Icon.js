@@ -98,8 +98,8 @@ const ViewBox = {
     // nav icons
     [IconType.NavSearch]: "0 0 44 44",
     [IconType.NavHome]: "0 0 62 39",
-    [IconType.NavProfile]: "0 0 42 41",
-    [IconType.NavSavings]: "0 0 48 48"
+    [IconType.NavProfile]: "0 0 62 42",
+    [IconType.NavSavings]: "0 0 40 39"
 }
 
 export function IconCircle(props) {

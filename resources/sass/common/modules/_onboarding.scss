@@ -1,13 +1,17 @@
 .onboarding {
     text-align: center;
-    background-color: $black;
-    color: #FFF;
 
     &__icon {
         .icon {
             display: block;
-            width: 141px;
+            width: 30px;
             margin: 0 auto 30px;
+        }
+
+        img {
+            width: 180px;
+            display: block;
+            margin: 0 auto 2.5em;
         }
     }
 

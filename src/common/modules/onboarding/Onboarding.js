@@ -21,7 +21,7 @@ export default class Onboarding extends Component {
                     <Screen>
                         <div className="ws-poster ws-poster--from-top">
                             <div className="onboarding__icon">
-                                <Icon type={IconType.MenyLogo} />
+                                <img src="/images/sparlogo.svg" />
                             </div>
                             <h1 className="onboarding__title">Velkommen til vår nettbutikk</h1>
                             <div className="onboarding__description">
@@ -36,7 +36,7 @@ export default class Onboarding extends Component {
                     <Screen>
                         <div className="ws-poster ws-poster--from-top">
                             <div className="onboarding__icon">
-                                <Icon type={IconType.MenyLogo} />
+                                <img src="/images/sparlogo.svg" />
                             </div>
                             <h1 className="onboarding__title">Du kan handle i vår nettbutikk</h1>
                             <div className="onboarding__description">
@@ -51,7 +51,7 @@ export default class Onboarding extends Component {
                     <Screen>
                         <div className="ws-poster ws-poster--from-top">
                             <div className="onboarding__icon">
-                                <Icon type={IconType.MenyLogo} />
+                                <img src="/images/sparlogo.svg" />
                             </div>
                             <h1 className="onboarding__title">Kom i gang</h1>
                             <p className="onboarding__description">For å få den beste opplevelsen av appen anbefaler vi deg å logge inn med Trumf. </p>

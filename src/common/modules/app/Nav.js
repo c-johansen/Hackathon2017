@@ -32,10 +32,10 @@ export class Nav extends React.PureComponent {
     }
     render() {
         const path = this.props.location.pathname
-        const isVoucher = path.includes("/savings")
-        const isUser = path.includes("/user")
-        const isSearch = path === "/search"
-        const isHome = !isVoucher && !isUser && !isSearch
+        const isVoucher = path.includes("/favorites")
+        const isUser = path === "/" || path === "/wheel"
+        const isSearch = path.includes( "/vouchers")
+        const isHome = path.includes("/feed")
 
         return (
             <nav className="nav" role="navigation">
@@ -43,7 +43,7 @@ export class Nav extends React.PureComponent {
 
                     <li className={css("nav__menu__link", { "nav__menu__link--active": isUser })}>
                         <InstantLink to="/">
-                            <span className="nav__menu__link__icon"  >
+                            <span className="nav__menu__link__icon" style={{ width: 25 }} >
                                 <Icon type={IconType.NavSearch} />
                             </span>
                             <span className="nav__menu__link__text">
@@ -54,7 +54,7 @@ export class Nav extends React.PureComponent {
                     <li
                         className={css("nav__menu__link", { "nav__menu__link--active": isHome })} >
                         <InstantLink to="/feed">
-                            <span className="nav__menu__link__icon"  >
+                            <span className="nav__menu__link__icon" style={{ width: 28 }}   >
                                 <Icon type={IconType.NavHome } />
                             </span>
                             <span className="nav__menu__link__text">
@@ -62,9 +62,9 @@ export class Nav extends React.PureComponent {
                             </span>
                         </InstantLink>
                     </li>
-                    <li className={css("nav__menu__link", { "nav__menu__link--active": isUser })}>
+                    <li className={css("nav__menu__link", { "nav__menu__link--active": isSearch })}>
                         <InstantLink to="/vouchers">
-                            <span className="nav__menu__link__icon"  >
+                            <span className="nav__menu__link__icon" style={{ width: 25 }}  >
                                 <Icon type={IconType.NavProfile} />
                             </span>
                             <span className="nav__menu__link__text">
@@ -74,7 +74,7 @@ export class Nav extends React.PureComponent {
                     </li>
                     <li className={css("nav__menu__link", { "nav__menu__link--active": isVoucher })}>
                         <InstantLink to="/favorites"  >
-                            <span className="nav__menu__link__icon" >
+                            <span className="nav__menu__link__icon" style={{ width: 23 }} >
                                 <Icon type={IconType.NavSavings} />
                             </span>
                             <span className="nav__menu__link__text">

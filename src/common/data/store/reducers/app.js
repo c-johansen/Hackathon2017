@@ -16,7 +16,7 @@ const init = {
         counter: 0
     },
     onboardingPopup: {
-        visible: !LocalStorage.get(App.LocalStorage.UserSeenOnboarding),
+        visible: true,
         counter: 0
     },
     tosPopup: {
