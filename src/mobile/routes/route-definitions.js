@@ -1,6 +1,7 @@
 import React from "react"
 import { Route, Redirect } from "react-router-dom"
 import Feed from "../../spar/pages/Feed"
+import CampaignTaco from "../../spar/pages/CampaignTaco"
 import Vouchers from "../../spar/pages/Vouchers"
 import Wheel from "../../spar/pages/Wheel"
 import Favorites from "../../spar/pages/Favorites"
@@ -9,8 +10,11 @@ import NotFound from "./NotFound"
 let i = 0
 
 export default [
-    <Route path={"/feed"} key={i++}>
+    <Route path={"/feed"} key={i++} exact>
         <Feed />
+    </Route>,
+    <Route path={"/feed/taco"} key={i++}>
+        <CampaignTaco />
     </Route>,
     <Route path={"/favorites"} key={i++}>
         <Favorites />
