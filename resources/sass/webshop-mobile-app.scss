@@ -111,6 +111,21 @@
     display: block;
 }
 
+.showPrize{
+    visibility: visible;
+}
+
+.hidePrize{
+    visibility:hidden;
+}
+
+.prizeImage{
+    width: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 @keyframes spin{
     from { transform: rotate(0deg); }
     to { transform: rotate(2880deg); }

@@ -23,9 +23,9 @@ export default async function (store) {
     LoggerConfig.turnOffAllFrameworkLoggers()
     setup({
         apiKey: process.env.API_KEY_PROD,
-        chainId: "1210",
-        userToken: "Bearer db68354c-e3df-4eb6-85e6-01df3f6d0e86",
-        environment: Environment.PRODUCTION
+        chainId: "1210", // process.env.CHAIN_ID,
+        userToken: "bearer ceb4e660-bfce-4dba-96df-670c7eca6aaf",// LocalStorage.get(App.LocalStorage.UserToken),
+        environment: Environment.PRODUCTION // env
     })
 
     if (token) {
