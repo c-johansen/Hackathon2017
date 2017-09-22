@@ -247,13 +247,20 @@
     text-transform: uppercase;
 }
 
+.spar-pin.tick {
+    animation: tick .3s .3s floor(10000/1);
+}
+
 .spinthewheel{
+    animation: spin 10s ease-in-out both;
+
+    /*
     animation-name: spin;
-    animation-duration: 4000ms;
+    animation-duration: 6000ms;
     animation-iteration-count: 1;
     animation-timing-function: ease-in-out;
-    animation-delay: 300ms;
     animation-fill-mode: both;
+    */
 }
 
 .wheel-logo {
@@ -285,6 +292,23 @@
 @keyframes spin{
     from { transform: rotate(0deg); }
     to { transform: rotate(2785deg); }
+}
+
+@keyframes tick {
+    from {
+        transform: rotate(0);
+    }
+    50% {
+        transform: rotate(-5deg);
+    }
+    to {
+        transform: rotate(0);
+    }
+}
+
+@keyframes spin2{
+    from { transform: rotate(2785deg); }
+    to { transform: rotate(3185deg); }
 }
 
 @keyframes zoomy {

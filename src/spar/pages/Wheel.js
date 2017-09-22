@@ -30,7 +30,7 @@ export class Home extends PureComponent {
                         </Only>
 
                         <Only if={!this.state.showPrize}>
-                            <img src="/images/pil.svg" style={{ zIndex: "1", position: "relative", display: "block", margin: "0 auto -1em" }} />
+                            <img src="/images/pil.svg" className={"spar-pin " + (this.state.hasClicked ? "tick" :"")} style={{ zIndex: "1", position: "relative", display: "block", margin: "0 auto -1em" }} />
                             <img className={this.state.hasClicked ? "spinthewheel wheel" : "waiting wheel"}
                                 src="/images/hjul.png"
                                 onAnimationEnd={() => setTimeout(() => this.setState({ showPrize: true }), 700)} />
