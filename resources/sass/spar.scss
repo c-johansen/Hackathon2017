@@ -287,9 +287,22 @@
     to { transform: rotate(2785deg); }
 }
 
+@keyframes zoomy {
+    from {
+        transform: scale(1.5);
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
 .prize {
     margin-top: -2.35em;
     width: 80%;
+    animation: zoomy .3s both;
     border-radius: 3px;
     background-color: #FFF;
     padding: 3.5em 2em 2em;
