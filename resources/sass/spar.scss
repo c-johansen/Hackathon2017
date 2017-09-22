@@ -209,13 +209,14 @@
     font-size: 15px;
 
     > li {
-        background-color: rgba(#FFF, .8);
+        background-color: rgba(#FFF, 1);
         padding: 20px 0;
         color: $text-color;
 
         &.yes {
-            background-color: #FFF;
+            background-color: $dark-gray;
             font-weight: bold;
+            color: #FFF;
         }
     }
 }
@@ -223,7 +224,7 @@
 
 .wheely {
     min-height: 100%;
-    padding-bottom:0;
+    padding-bottom: 0;
     box-sizing: border-box;
     background-color: #009540;
     color: #FFF;
@@ -239,7 +240,7 @@
 
 .spinny {
     padding-top: 16px;
-    margin-top: 25px;
+    margin-top: 16px;
     color: $dark-gray;
     font-weight: 600;
     padding-bottom: 16px;
@@ -283,7 +284,7 @@
 
 @keyframes spin{
     from { transform: rotate(0deg); }
-    to { transform: rotate(2860deg); }
+    to { transform: rotate(2785deg); }
 }
 
 .prize {
@@ -297,6 +298,7 @@
     margin-right: auto;
     font-size: 16px;
     text-align: center;
+    box-shadow: 0 0 5px rgba(#000, .1);
 
     &__title {
         font-size: 20px;
@@ -312,4 +314,39 @@
     .icon {
         margin-bottom: 2em;
     }
+}
+
+.spar-summary {
+    background: $red;
+    color: #FFF;
+    font-size: 15px;
+    font-weight: 500;
+
+    .icon {
+        width: 35px;
+        margin-right: 10px;
+    }
+
+    padding: 20px 16px;
+    margin: 20px -16px 0;
+
+    strong {
+        font-size: 20px;
+    }
+}
+
+.voucher__info__title {
+    @extend .spar-heading;
+    color: $dark-gray;
+    margin: 0 0 .4em ;
+    font-size: 35px;
+}
+
+.voucher {
+    border: 1px solid $dark-gray;
+}
+
+
+.voucher__footer {
+    background-color: $dark-gray;
 }

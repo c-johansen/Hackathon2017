@@ -23,7 +23,7 @@ export class Home extends PureComponent {
                             <div className="prize">
                                 <div className="prize__title">Gratulerer! 🎉 </div>
                                 <Icon type={IconType.TrumfLogo} />
-                                <div>Du får <strong>5 %</strong> ekstra Trumf-bonus neste gang du handler hos SPAR!</div>
+                                <div>Du får <strong>3 %</strong> ekstra Trumf-bonus neste gang du handler hos SPAR!</div>
                             </div>
 
                             <button type="button" className="spinny ws-button ws-button--wide ws-button--white" onClick={this.goToOffers.bind(this)}> Se våre tilbud <Icon type={IconType.ChevronRight} /></button>
@@ -33,7 +33,7 @@ export class Home extends PureComponent {
                             <img src="/images/pil.svg" style={{ zIndex: "1", position: "relative", display: "block", margin: "0 auto -1em" }} />
                             <img className={this.state.hasClicked ? "spinthewheel wheel" : "waiting wheel"}
                                 src="/images/hjul.png"
-                                onAnimationEnd={() => setTimeout(() => this.setState({ showPrize: true }), 400)} />
+                                onAnimationEnd={() => setTimeout(() => this.setState({ showPrize: true }), 1000)} />
 
                             <button onClick={() => this.setState({ hasClicked: true })} type="button" className="spinny ws-button ws-button--wide ws-button--white">Spinn &amp; vinn</button>
                         </Only>
